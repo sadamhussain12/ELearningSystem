@@ -1,11 +1,11 @@
     /* Root colors */
     :root {
-      --primary-color: #6d28d2;  
-      --secondary-color: #892de1;
+      --primary-color: #f26e25;  
+      --secondary-color: #c45418;
       --text-primary-color: #2a2b3f; 
       --text-secondary-color: #ffffff;        
       --background-color: #ffffff; 
-      --background-new-bg-color: #ede5f9; 
+      --background-new-bg-color: #f26d2524; 
     }
 
     body {
@@ -79,7 +79,7 @@
     max-width: -webkit-fill-available;
     border-radius: 50px;
     border: 1px solid rgb(162, 162, 162);
-    padding: 10px 15px;
+    padding: 5px 15px;
     display: flex;
     align-items: center;
 }
@@ -228,3 +228,109 @@
     gap: 10px;
   }
 }
+
+
+#closeMenu{
+  border: 1px solid;
+    border-radius: 4px;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: none;
+}
+
+@media (max-width: 1144px) and (min-width: 992px) {
+  .top-header .nav-link,
+  .top-header .btn {
+    font-size: 12px !important;
+  }
+}
+
+.search-form-pc-larg{
+  max-width: 350px;
+}
+
+@media (max-width: 1144px) and (min-width: 992px) {
+  .search-form-pc-larg {
+    max-width: 180px !important;
+    width: 100%;
+  }
+}
+
+
+
+      /* Mobile Search Overlay */
+      .mobile-search-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 10px 15px;
+        display: none;
+        align-items: center;
+        z-index: 1050;
+        border-bottom: 1px solid #ccc;
+      }
+      .mobile-search-overlay.active {
+        display: flex;
+      }
+      .mobile-search-overlay input {
+        flex: 1;
+        border: none;
+        outline: none;
+        padding: 8px 10px;
+        font-size: 16px;
+      }
+      .mobile-search-overlay button {
+        background: none;
+        border: none;
+        font-size: 20px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+
+      /* Offcanvas Sidebar */
+      .offcanvas-menu {
+        position: fixed;
+        top: 0;
+        left: -260px;
+        width: 260px;
+        height: 100%;
+        background: #fff;
+        box-shadow: 2px 0 8px rgba(0,0,0,0.15);
+        transition: left 0.3s ease-in-out;
+        z-index: 2000;
+        padding: 20px;
+      }
+      .offcanvas-menu.active {
+        left: 0;
+      }
+      .offcanvas-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+      }
+      .offcanvas-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .offcanvas-menu ul li {
+        margin: 12px 0;
+      }
+      .offcanvas-menu ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+      }
+      .offcanvas-menu ul li a:hover {
+        color: var(--primary-color);
+      }
