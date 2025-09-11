@@ -1,11 +1,11 @@
     /* Root colors */
     :root {
-      --primary-color: #6d28d2;  
-      --secondary-color: #892de1;
+      --primary-color: #f26e25;  
+      --secondary-color: #c45418;
       --text-primary-color: #2a2b3f; 
       --text-secondary-color: #ffffff;        
       --background-color: #ffffff; 
-      --background-new-bg-color: #ede5f9; 
+      --background-new-bg-color: #f26d2524; 
     }
 
     body {
@@ -79,7 +79,7 @@
     max-width: -webkit-fill-available;
     border-radius: 50px;
     border: 1px solid rgb(162, 162, 162);
-    padding: 10px 15px;
+    padding: 5px 15px;
     display: flex;
     align-items: center;
 }
@@ -228,22 +228,3 @@
     gap: 10px;
   }
 }
-
-.slide-bg {
-    height: 400px;
-    /* adjust as needed */
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    border-radius: 8px;
-  }
-
-  /* Overlay text card */
-  .slider-text-box {
-    background: #fff;
-    border-radius: 8px;
-    max-width: 490px;
-    margin-left: 40px;
-    /* push away from edge */
-    z-index: 2;
-  }
