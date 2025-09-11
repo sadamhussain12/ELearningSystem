@@ -228,3 +228,22 @@
     gap: 10px;
   }
 }
+
+.slide-bg {
+    height: 400px;
+    /* adjust as needed */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 8px;
+  }
+
+  /* Overlay text card */
+  .slider-text-box {
+    background: #fff;
+    border-radius: 8px;
+    max-width: 490px;
+    margin-left: 40px;
+    /* push away from edge */
+    z-index: 2;
+  }
