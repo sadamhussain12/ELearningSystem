@@ -59,6 +59,30 @@
     filter: grayscale(0%);
     opacity: 1;
   }
+
+  /* On small screens */
+@media (max-width: 767.98px) {
+  .slide-bg {
+    min-height: 300px;
+     /* shorter slide for phones */
+  }
+  .slider-text-box {
+    width: 80%;              /* full width */
+    text-align: center;       /* center align */
+    padding: 1rem !important; /* smaller padding */
+  }
+  .slider-text-box h2 {
+    font-size: 1.2rem; /* scale down */
+  }
+  .slider-text-box p {
+    font-size: 0.9rem; /* scale down */
+  }
+  .slider-text-box .btn {
+    display: block;       /* stack buttons */
+    margin: 0.25rem auto; /* spacing between */
+    width: fit-content;   /* keep buttons compact */
+  }
+}
 </style>
 
 <body>
