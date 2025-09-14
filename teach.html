@@ -336,6 +336,266 @@
 
 
 
+   <style>
+      .testimonial-slider {
+        background: #f8f9fa;
+      }
+      .testimonial-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .testimonial-image {
+        flex: 0 0 40%;
+        text-align: center;
+      }
+      .testimonial-image img {
+        max-width: 100%;
+      }
+      .testimonial-text {
+        flex: 0 0 60%;
+        padding: 20px;
+      }
+      .testimonial-text .author {
+        margin-top: 15px;
+        font-weight: bold;
+        color: #000;
+      }
+      .testimonial-text .role {
+        font-size: 14px;
+        color: #555;
+      }
+      .carousel-control-prev, .carousel-control-next {
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        border-radius: 50%;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .carousel-control-prev-icon, .carousel-control-next-icon {
+        filter: invert(1);
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .testimonial-item {
+          flex-direction: column;
+          text-align: center;
+        }
+        .testimonial-image, .testimonial-text {
+          flex: 100%;
+        }
+      }
+    </style>
+
+    <section class="testimonial-slider pr-4 pl-4 mb-5">
+      <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="testimonial-item">
+                <div class="testimonial-image">
+                  <img src="assets/img/frank-2x-v2.webp" alt="User">
+                </div>
+                <div class="testimonial-text">
+                  <p>“Udemy has changed my life. It’s allowed me to follow my passion and become a teacher I love to see my students succeed and hear them say they’ve learned more, quicker, from my courses than they did in college. It’s so humbling.”</p>
+                  <div class="author">Paulo Dichone</div>
+                  <div class="role">Developer (Android Speciality)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="container">
+              <div class="testimonial-item">
+                <div class="testimonial-image">
+                  <img src="assets/img/paulo-2x.webp" alt="User">
+                </div>
+                <div class="testimonial-text">
+                  <p>“This platform gave me confidence and skills that helped me grow in my career faster than I ever imagined.”</p>
+                  <div class="author">John Doe</div>
+                  <div class="role">Web Developer</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="container">
+              <div class="testimonial-item">
+                <div class="testimonial-image">
+                  <img src="assets/img/deborah-2x.webp" alt="User">
+                </div>
+                <div class="testimonial-text">
+                  <p>“This platform gave me confidence and skills that helped me grow in my career faster than I ever imagined.”</p>
+                  <div class="author">John Doe</div>
+                  <div class="role">Web Developer</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controls -->
+        <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+    </section>
+
+
+
+
+
+
+    <style>
+      .support-section {
+        text-align: center;
+      }
+      .support-section h2 {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #2a2b3f;
+      }
+      .support-section p {
+        font-size: 18px;
+        color: #333;
+        line-height: 1.6;
+      }
+      .support-section a {
+        display: inline-block;
+        margin-top: 20px;
+        color: #5624d0;
+        font-weight: 600;
+        text-decoration: underline;
+      }
+      .support-img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Responsive behavior */
+      @media (max-width: 768px) {
+        .support-right {
+          display: none; /* hide right image */
+        }
+        .support-left {
+          margin-bottom: 20px;
+        }
+        .support-section {
+          text-align: center;
+        }
+      }
+    </style>
+
+    <section class="support-section" style="padding-top: 100px;padding-bottom: 140px;">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          
+          <!-- Left Image -->
+          <div class="col-md-3 support-left text-center">
+            <img src="assets/img/support-1-2x-v3.webp" alt="Support Left" class="support-img">
+          </div>
+
+          <!-- Text Content -->
+          <div class="col-md-6">
+            <h2>You won’t have to do it alone</h2>
+            <p>
+              Our <strong>Instructor Support Team</strong> is here to answer your questions and review your test video, 
+              while our <strong>Teaching Center</strong> gives you plenty of resources to help you through the process. 
+              Plus, get the support of experienced instructors in our <strong>online community</strong>.
+            </p>
+            <a href="#">Need more details before you start? Learn more.</a>
+          </div>
+
+          <!-- Right Image -->
+          <div class="col-md-3 support-right text-center">
+            <img src="assets/img/support-2-2x-v3.webp" alt="Support Right" class="support-img">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+   <main class="hero">
+    <div class="hero__inner container-fluid">
+      <h1 class="hero__title">Come teach with us</h1>
+      <p class="hero__subtitle">Become an instructor and change lives — including your own</p>
+      <div class="hero__cta">
+        <button class="btn main-btn" aria-label="Get started" style="    width: 300px;
+    height: 40px;">Get started</button>
+      </div>
+    </div>
+  </main>
+  <style>
+    
+/* HERO */
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:60vh;                 /* central vertical space; adjusts on small screens */
+  padding: clamp(32px, 6vw, 100px) 0;
+  text-align:center;
+  background-color: #f8f9fa;
+}
+
+/* inner wrapper to limit width and center content */
+.hero__inner{
+  width:100%;
+  max-width: var(--container-max);
+  margin-inline:auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap: 18px;
+  padding: 24px;
+}
+
+/* Title styling: large serif, weight and responsive sizing close to screenshot */
+.hero__title{
+  margin:0;
+  font-family: "Merriweather", Georgia, serif;
+  font-weight:800;
+  line-height:1.03;
+  color: #222233;
+  /* responsive size: smaller on mobile, large on desktop */
+  font-size: clamp(28px, 6vw + 6px, 72px);
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+/* Subtitle paragraph */
+.hero__subtitle{
+  margin:0;
+  max-width:760px;
+  color:var(--muted);
+  font-weight:500;
+  font-size: clamp(16px, 2.6vw, 22px);
+  line-height:1.48;
+  padding: 0 12px;
+}
+
+/* CTA container */
+.hero__cta{
+  margin-top: 14px;
+}
+  </style>
 
 
 
