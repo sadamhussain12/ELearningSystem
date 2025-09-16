@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <a class="navbar-brand font-weight-bold" href="#">
+    <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" height="28" alt="Logo">
+  </a>
+
+
+
+    <!-- Left menu (Explore + other links) visible on large -->
+  <ul class="navbar-nav ml-3 d-none d-lg-flex top-header">
+    <li class="nav-item"><a class="nav-link" href="#">Explore</a></li>
+  </ul>
+
+  <!-- Desktop Search -->
+  <form class="mx-3 flex-grow-1 d-none d-lg-block search-form-pc-larg">
+    <div class="search-box">
+      <input class="form-control" type="text" placeholder="Search for anything">
+    </div>
+  </form>
+
+    <!-- Left menu (Explore + other links) visible on large -->
+  <ul class="navbar-nav ml-3 d-none d-lg-flex top-header for-respon">
+    <li class="nav-item"><a class="nav-link" href="#">Plans & Pricing</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Udemy Business</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Teach on Udemy</a></li>
+  </ul>
+
+  <!-- Right side -->
+  <ul class="navbar-nav ml-auto align-items-center top-header" style="    display: ruby;">
+    <!-- Mobile search icon -->
+    <li class="nav-item d-lg-none mx-2">
+      <a href="#" id="mobileSearchBtn"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </li>
+
+    <!-- Cart -->
+    <li class="nav-item mx-2 pt-2 pb-2">
+      <a class="nav-link" href="#"><i class="fa-regular fa-cart-shopping"></i></a>
+    </li>
+
+    <!-- Auth & language (only on large) -->
+    <li class="nav-item d-none d-lg-block mx-1">
+      <button class="btn secondary-btn">Log in</button>
+    </li>
+    <li class="nav-item d-none d-lg-block mx-1">
+      <button class="btn main-btn">Sign up</button>
+    </li>
+    <li class="nav-item d-none d-lg-block mx-1">
+      <button class="btn secondary-btn"><i class="fa-solid fa-globe"></i></button>
+    </li>
+
+    <!-- Mobile toggle -->
+    <li class="nav-item d-lg-none">
+      <button class="navbar-toggler" type="button" id="menuToggleBtn">
+        <span><i class="fa-solid fa-bars"></i></span>
+      </button>
+    </li>
+  </ul>
+</nav>
+
+<!-- Mobile Search Overlay -->
+<div class="mobile-search-overlay" id="mobileSearchOverlay">
+  <input type="text" placeholder="Search for anything">
+  <button id="closeSearch"><i class="fa-solid fa-times"></i></button>
+</div>
+
+<!-- Offcanvas Sidebar -->
+<div class="offcanvas-menu" id="offcanvasMenu">
+  <div class="offcanvas-header">
+    <h5>Menu</h5>
+    <button id="closeMenu"><i class="fa-solid fa-times"></i></button>
+  </div>
+  <ul class="top-header">
+    <li><a href="#">Explore</a></li>
+    <li><a href="#">Plans & Pricing</a></li>
+    <li><a href="#">Udemy Business</a></li>
+    <li><a href="#">Teach on Udemy</a></li>
+   <li class="nav-item ">
+      <button class="btn secondary-btn">Log in</button>
+    </li>
+    <li class="nav-item ">
+      <button class="btn main-btn">Sign up</button>
+    </li>
+    <li class="nav-item">
+      <button class="btn secondary-btn"><i class="fa-solid fa-globe"></i> English</button>
+    </li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+   <style>
+    
+      .checkout-title { font-size: 2rem; font-weight: 700; margin-bottom: 20px; }
+      .order-box { background: #f7f9fa; padding: 20px; border-radius: 6px; }
+      .order-box h5 { font-weight: 700; margin-bottom: 15px; }
+      .course-item { display: flex; align-items: flex-start; margin-bottom: 15px; }
+      .course-item img { width: 60px; height: 60px; object-fit: cover; border-radius: 4px; margin-right: 10px; }
+      .course-item .title { font-weight: 600; font-size: 14px; }
+      .course-item .price { font-weight: 700; }
+      .discount { color: #6a6f73; text-decoration: line-through; font-size: 13px; margin-left: 5px; }
+      .form-section {  padding: 15px; border-radius: 6px; margin-bottom: 20px; }
+      .payment-icons img { height: 24px; margin-left: 5px; }
+      .form-section { border: 1px solid #ddd; padding: 15px; border-radius: 6px; margin-bottom: 20px; }
+      @media (min-width: 992px) {
+        .sticky-lg { position: sticky; top: 20px; }
+      }
+    </style>
+    
+    <div class="container py-5">
+      <div class="row">
+        
+        <!-- Left Side -->
+        <div class="col-lg-7">
+          <h2 class="checkout-title">Checkout</h2>
+          <hr>
+
+          <!-- Account details -->
+          <h5 style="font-size: 15px;" class="mb-4"><b>1. Account details </b><span class="text-success">(hasnainkhan.div@gmail.com ✔️)</span></h5>
+         
+
+          
+
+          <!-- Billing address -->
+          <h5 style="font-size: 15px;"><b>2. Billing address & Payment method</b></h5>
+            
+
+          <div class="form-section" style="border: none;">
+            <label>Country</label>
+            <select class="form-control mb-3">
+              <option>Pakistan</option>
+              <option>India</option>
+              <option>United States</option>
+            </select>
+
+            <p style="font-size: 14px;"><small>Udemy is required by law to collect applicable transaction taxes for purchases made in certain tax jurisdictions.</small></p>
+
+             <div class="payments">
+
+    <!-- Cards option (default active) -->
+    <div class="payment-option active" data-value="cards">
+      <div class="payment-header">
+        <div class="left  mb-3">
+          <input type="radio" class="radio" name="payment" id="opt-cards" checked>
+          <div class="title">Cards</div>
+        </div>
+
+        <div class="payment-logos" aria-hidden="true">
+          <img src="assets/img/card-visa.svg" alt="Visa">
+          <img src="assets/img/card-mastercard.svg" alt="Mastercard">
+          <img src="assets/img/card-amex.svg" alt="Amex">
+          <img src="assets/img/card-discover.svg" alt="Discover">
+          <img src="assets/img/card-jcb.svg" alt="Discover">
+        </div>
+      </div>
+
+      <div class="payment-body" id="body-cards">
+        <label for="Card number"><b>Card number</b></label>
+        <input class="field" type="text" placeholder="Card number (1234 5678 9012 3456)">
+        <div class="row">
+          <div class="col">
+            <label for="Card number"><b>Expiry date</b></label>
+            <input class="field" type="text" placeholder="MM/YY"></div>
+          <div class="col">
+            <label for="Card number"><b>CVC/CVV</b></label>
+            <input class="field" type="text" placeholder="CVC"></div>
+        </div>
+        <label for="Card number"><b>Name on card</b></label>
+        <input class="field" type="text" placeholder="Name on card">
+        <div class="checkbox">
+            
+          <input type="checkbox" id="saveCard">
+          <label for="saveCard" class="small-muted">Securely save this card for my later purchase</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- PayPal option -->
+    <div class="payment-option" data-value="paypal">
+      <div class="payment-header">
+        <div class="left  mb-3">
+          <input type="radio" class="radio" name="payment" id="opt-paypal">
+          <div class="title">PayPal</div>
+        </div>
+
+        <!-- small PayPal logo on right (optional) -->
+        <div class="payment-logos" aria-hidden="true">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" style="padding: 5px;">
+        </div>
+      </div>
+
+      <div class="payment-body" id="body-paypal">
+        <p style="font-size: 16px;">
+            <small>          In order to complete your transaction, we will transfer you over to PayPal's secure servers.
+</small>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Toggle logic: when a .payment-option is clicked or its radio changes,
+    // make sure only that option becomes active and its body visible.
+    (function() {
+      const options = document.querySelectorAll('.payment-option');
+
+      function selectOptionByValue(value) {
+        options.forEach(opt => {
+          const radio = opt.querySelector('input[type=radio]');
+          if (opt.dataset.value === value) {
+            opt.classList.add('active');
+            if (radio) radio.checked = true;
+          } else {
+            opt.classList.remove('active');
+            if (radio) radio.checked = false;
+          }
+        });
+      }
+
+      // Click on whole option should select it
+      options.forEach(opt => {
+        opt.addEventListener('click', function(e) {
+          // If user clicked inside an input (e.g., typing), don't steal focus
+          const tag = e.target.tagName.toLowerCase();
+          if (tag === 'input' || tag === 'textarea' || tag === 'button' || e.target.closest('input')) {
+            // allow native behavior (but still ensure selection)
+            const radio = opt.querySelector('input[type=radio]');
+            if (radio) radio.checked = true;
+            selectOptionByValue(opt.dataset.value);
+            return;
+          }
+          selectOptionByValue(opt.dataset.value);
+        });
+
+        // radio change (keyboard selection)
+        const radio = opt.querySelector('input[type=radio]');
+        if (radio) {
+          radio.addEventListener('change', function() {
+            if (radio.checked) selectOptionByValue(opt.dataset.value);
+          });
+        }
+      });
+
+      // Optional: ensure initial state matches DOM (in case of server-side rendering)
+      const initiallyChecked = document.querySelector('.payment-option input[type=radio]:checked');
+      if (initiallyChecked) {
+        const parent = initiallyChecked.closest('.payment-option');
+        if (parent) selectOptionByValue(parent.dataset.value);
+      } else {
+        // fallback: activate first
+        if (options[0]) selectOptionByValue(options[0].dataset.value);
+      }
+    })();
+  </script>
+
+   <style>
+
+    .payment-option {
+      background:#fff;
+      border:1px solid #e0e3ea;
+      border-radius:8px;
+      padding:12px;
+      margin-bottom:14px;
+      cursor:pointer;
+      transition: box-shadow .15s ease;
+    }
+    .payment-option:hover { box-shadow: 0 6px 18px rgba(16,24,40,0.06); }
+
+    .payment-header {
+  display: block; /* default for small & medium screens */
+}
+
+/* Apply flex only on large screens (≥992px ) */
+@media (min-width: 400px) {
+  .payment-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+}
+
+    .left { display:flex; align-items:center; gap:12px; }
+    .radio { width:18px; height:18px; accent-color:#374151; } /* modern browsers */
+    .title { font-weight:700; font-size:16px; display:flex; align-items:center; gap:8px; }
+
+    .payment-logos { display:flex; align-items:center; gap:8px; }
+    .payment-logos img { height:28px; display:block;     border: solid 1px #0000001f;
+    border-radius: 3px;}
+
+    .payment-body {
+      overflow:hidden;
+      max-height:0;
+      opacity:0;
+      transition: max-height .36s ease, opacity .28s ease, margin-top .28s ease;
+    }
+    .payment-option.active .payment-body {
+      max-height:1000px; /* large enough to show content */
+      opacity:1;
+      margin-top:12px;
+    }
+
+    /* Input styles */
+    .field { width:100%; padding:11px 12px; border:1px solid #d1d5db; border-radius:6px; margin-bottom:10px; font-size:14px; box-sizing:border-box; }
+
+
+  </style>
+
+
+
+          </div>
+
+          <!-- Order details -->
+          <h5 style="font-size: 14px;" class="mt-4 mb-3"><b>Order details (2 courses)</b></h5>
+          <div class="course-item">
+            <img src="assets/img/5170404_d282_9.webp">
+            <div>
+              <div class="title">The Complete AI Guide: Learn ChatGPT, Generative AI & More</div>
+              <div class="price">$9.99 <span class="discount">$49.99</span></div>
+            </div>
+          </div>
+          <div class="course-item">
+            <img src="assets/img/5061666_b32b_6.jpg">
+            <div>
+              <div class="title">ChatGPT: Complete ChatGPT Course For Work 2025</div>
+              <div class="price">$9.99 <span class="discount">$49.99</span></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Side -->
+        <div class="col-lg-5">
+          <div class="order-box sticky-lg">
+            <h5>Order summary</h5>
+            <div class="d-flex justify-content-between">
+              <span>Original Price:</span>
+              <span>$99.98</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <span>Discounts (80% Off):</span>
+              <span>- $80.00</span>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between font-weight-bold">
+              <span>Total (2 courses):</span>
+              <span>$19.98</span>
+            </div>
+            <button class="btn main-btn btn-block mt-3"><i class="fa fa-lock"></i> Pay $19.98</button>
+            <p class="mt-3 text-center"><b>30-Day Money-Back Guarantee</b><br>
+              Not satisfied? Get a full refund within 30 days.<br>Simple and straightforward!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+<!-- Footer Section -->
+<footer class="site-footer" style="background-color: #2a2b3f;">
+  <div class="footer-top d-inline-flex w-100 justify-content-between">
+    <p class="footer-heading">
+      Top companies choose <span class="highlight">Udemy Business</span> to build in-demand career skills.
+    </p>
+    <div class="footer-logos">
+      <img src="assets/img/eventbrite-light.svg" alt="Nasdaq">
+      <img src="assets/img/nasdaq-light.svg" alt="NetApp">
+      <img src="assets/img/netapp-light.svg" alt="Eventbrite">
+      <img src="assets/img/volkswagen-light.svg" alt="Eventbrite">
+    </div>
+  </div>
+
+  <!-- Footer Grid Links -->
+  <div class="footer-links">
+    <div>
+      <h4>In-demand Careers</h4>
+      <ul>
+        <li>Data Scientist</li>
+        <li>Full Stack Web Developer</li>
+        <li>Cloud Engineer</li>
+        <li>Project Manager</li>
+        <li>Game Developer</li>
+        <li>All Career Accelerators</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Web Development</h4>
+      <ul>
+        <li>Web Development</li>
+        <li>JavaScript</li>
+        <li>React JS</li>
+        <li>Angular</li>
+        <li>Java</li>
+      </ul>
+    </div>
+    <div>
+      <h4>IT Certifications</h4>
+      <ul>
+        <li>Amazon AWS</li>
+        <li>AWS Certified Cloud Practitioner</li>
+        <li>AZ-900: Microsoft Azure Fundamentals</li>
+        <li>AWS Certified Solutions Architect</li>
+        <li>Kubernetes</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Leadership</h4>
+      <ul>
+        <li>Leadership</li>
+        <li>Management Skills</li>
+        <li>Project Management</li>
+        <li>Personal Productivity</li>
+        <li>Emotional Intelligence</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Certifications by Skill</h4>
+      <ul>
+        <li>Cybersecurity Certification</li>
+        <li>Project Management Certification</li>
+        <li>Cloud Certification</li>
+        <li>Data Analytics Certification</li>
+        <li>HR Management Certification</li>
+        <li>See all Certifications</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Data Science</h4>
+      <ul>
+        <li>Data Science</li>
+        <li>Python</li>
+        <li>Machine Learning</li>
+        <li>ChatGPT</li>
+        <li>Deep Learning</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Communication</h4>
+      <ul>
+        <li>Communication Skills</li>
+        <li>Presentation Skills</li>
+        <li>Public Speaking</li>
+        <li>Writing</li>
+        <li>PowerPoint</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Business Analytics & Intelligence</h4>
+      <ul>
+        <li>Microsoft Excel</li>
+        <li>SQL</li>
+        <li>Microsoft Power BI</li>
+        <li>Data Analysis</li>
+        <li>Business Analysis</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Footer -->
+  <div class="footer-bottom" style="background-color: #1c1d29;">
+    <div class="footer-col">
+      <h4>About</h4>
+      <ul>
+        <li>About us</li>
+        <li>Careers</li>
+        <li>Contact us</li>
+        <li>Blog</li>
+        <li>Investors</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Discover Udemy</h4>
+      <ul>
+        <li>Get the app</li>
+        <li>Teach on Udemy</li>
+        <li>Plans and Pricing</li>
+        <li>Affiliate</li>
+        <li>Help and Support</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Udemy for Business</h4>
+      <ul>
+        <li>Udemy Business</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal & Accessibility</h4>
+      <ul>
+        <li>Accessibility statement</li>
+        <li>Privacy policy</li>
+        <li>Sitemap</li>
+        <li>Terms</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-copy" style="background-color: #1c1d29;">
+    <div class="copy-left">
+      <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="Udemy Logo" height="20">
+      <span>© 2025 Udemy, Inc.</span>
+    </div>
+    <div class="copy-right">
+      <a href="#">Cookie settings</a>
+      <a href="#"><i class="fa-regular fa-globe"></i> English</a>
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+  <!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</html>
