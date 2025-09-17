@@ -30,6 +30,16 @@ font-size: 19px;
     font-weight: 600;
     }
 
+    .heading-6 {
+      color: var(--text-primary-color);
+      font-family: auto;
+font-size: 25px;
+    line-height: 24px;
+    font-weight: 600;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    }
+
     .heading-3 {
       color: var(--text-primary-color);
       font-family: auto;
@@ -420,13 +430,22 @@ font-size: 19px;
         align-items: center;
     }
 
+     .teach-div-pc-2{
+      background-color: #eeeeee;
+  
+    background-position: center;
+    background-size: cover;
+    display: flex;
+        align-items: center;
+    }
+
      .teach-div-mobil{
           width: -webkit-fill-available;
           display: none;
     }
 
   @media screen and (max-width: 700px) {
-  .teach-div-pc{
+  .teach-div-pc-2-2{
     display: none;
   }
 
@@ -641,5 +660,28 @@ font-size: 19px;
     display: block;       /* stack buttons */
     margin: 0.25rem auto; /* spacing between */
     width: fit-content;   /* keep buttons compact */
+  }
+}
+
+.newtextdis{
+  width: 700px;
+}
+
+.how-we-started{
+  background-color: #eeeeee;
+
+}
+
+.our-offices p{
+  font-weight: 900;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+
+
+@media (max-width: 777px) {
+    .newtextdis{
+    width: auto;
   }
 }
