@@ -460,6 +460,11 @@ font-size: 19px;
       align-content: center;
 }
 
+.number-div-2{
+  background-color: var(--background-new-bg-color);
+      align-content: center;
+}
+
  .stats-number {
         font-size: 3rem;
         font-weight: bold;
@@ -483,6 +488,13 @@ font-size: 19px;
   }
 }
 
+@media (max-width: 768px) {
+ .number-div-2 {
+    height: auto !important;
+        padding: 20px 0px;
+
+  }
+}
 
 /* ////////////////////////// salman css start  */
   :root {

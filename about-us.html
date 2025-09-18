@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <a class="navbar-brand font-weight-bold" href="#">
+    <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" height="28" alt="Logo">
+  </a>
+
+
+
+    <!-- Left menu (Explore + other links) visible on large -->
+  <ul class="navbar-nav ml-3 d-none d-lg-flex top-header">
+    <li class="nav-item"><a class="nav-link" href="#">Explore</a></li>
+  </ul>
+
+  <!-- Desktop Search -->
+  <form class="mx-3 flex-grow-1 d-none d-lg-block search-form-pc-larg">
+    <div class="search-box">
+      <input class="form-control" type="text" placeholder="Search for anything">
+    </div>
+  </form>
+
+    <!-- Left menu (Explore + other links) visible on large -->
+  <ul class="navbar-nav ml-3 d-none d-lg-flex top-header for-respon">
+    <li class="nav-item"><a class="nav-link" href="#">Plans & Pricing</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Udemy Business</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Teach on Udemy</a></li>
+  </ul>
+
+  <!-- Right side -->
+  <ul class="navbar-nav ml-auto align-items-center top-header" style="    display: ruby;">
+    <!-- Mobile search icon -->
+    <li class="nav-item d-lg-none mx-2">
+      <a href="#" id="mobileSearchBtn"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </li>
+
+    <!-- Cart -->
+    <li class="nav-item mx-2 pt-2 pb-2">
+      <a class="nav-link" href="#"><i class="fa-regular fa-cart-shopping"></i></a>
+    </li>
+
+    <!-- Auth & language (only on large) -->
+    <li class="nav-item d-none d-lg-block mx-1">
+      <button class="btn secondary-btn">Log in</button>
+    </li>
+    <li class="nav-item d-none d-lg-block mx-1">
+      <button class="btn main-btn">Sign up</button>
+    </li>
+    <li class="nav-item d-none d-lg-block mx-1">
+      <button class="btn secondary-btn"><i class="fa-solid fa-globe"></i></button>
+    </li>
+
+    <!-- Mobile toggle -->
+    <li class="nav-item d-lg-none">
+      <button class="navbar-toggler" type="button" id="menuToggleBtn">
+        <span><i class="fa-solid fa-bars"></i></span>
+      </button>
+    </li>
+  </ul>
+</nav>
+
+<!-- Mobile Search Overlay -->
+<div class="mobile-search-overlay" id="mobileSearchOverlay">
+  <input type="text" placeholder="Search for anything">
+  <button id="closeSearch"><i class="fa-solid fa-times"></i></button>
+</div>
+
+<!-- Offcanvas Sidebar -->
+<div class="offcanvas-menu" id="offcanvasMenu">
+  <div class="offcanvas-header">
+    <h5>Menu</h5>
+    <button id="closeMenu"><i class="fa-solid fa-times"></i></button>
+  </div>
+  <ul class="top-header">
+    <li><a href="#">Explore</a></li>
+    <li><a href="#">Plans & Pricing</a></li>
+    <li><a href="#">Udemy Business</a></li>
+    <li><a href="#">Teach on Udemy</a></li>
+   <li class="nav-item ">
+      <button class="btn secondary-btn">Log in</button>
+    </li>
+    <li class="nav-item ">
+      <button class="btn main-btn">Sign up</button>
+    </li>
+    <li class="nav-item">
+      <button class="btn secondary-btn"><i class="fa-solid fa-globe"></i> English</button>
+    </li>
+  </ul>
+</div>
+
+
+
+
+
+
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #1c1d1f;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      padding: 60px 0;
+    }
+    .hero-text h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    .hero img {
+      max-width: 250px;
+      border-radius: 8px;
+    }
+    .our-origins {
+      padding: 60px 0;
+      text-align: center;
+    }
+    .our-origins h2 {
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .contact {
+      padding: 60px 0;
+      background: #f8f9fa;
+    }
+    .contact h2 {
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+    .contact .col-md-4 {
+      margin-bottom: 25px;
+    }
+    .our-offices {
+      padding: 60px 0;
+    }
+    .our-offices h2 {
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+    .office-card {
+      margin-bottom: 30px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      font-size: 14px;
+      color: #555;
+    }
+    footer a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+  
+
+<div class="container-fluid teach-div-pc-2">
+
+  <div class="container">
+
+  <div class="row" style="align-items: center;">
+    <div class="col-lg-6 teach-div-pc-2-2">
+        <h1 class="heading-1" style="font-weight: 800;
+    font-size: 57px;">Welcome to where<br> possibilities begin</h1>
+    </div>
+
+    <div class="col-lg-6">
+      <img class="img-fluid" src="assets/img/about-homepage-hero-jan-2024.png" alt="">
+    </div>
+  </div>
+
+  </div>
+
+
+</div>
+
+
+<div class="container-fluid teach-div-mobil p-0">
+
+
+  <div class="container-fluid mt-3 mb-5">
+
+    <h1 class="heading-1" style="    font-weight: 800;
+    font-size: 47px;">Welcome to where possibilities begin</h1>
+
+  </div>
+  
+
+
+</div>
+
+<!-- Our Origins -->
+<section class="our-origins container">
+<h1 class="heading-1 text-center">Skills are the key to unlocking potential
+</h1>
+ <center>
+   <div class="newtextdis">
+    <p>Whether you want to learn a new skill, train your teams, or share what you know with the world, you’re in the right place. As a leader in online learning, we’re here to help you achieve your goals and transform your life.
+  </p>
+  </div>
+ </center>
+</section>
+
+<!-- How We Started -->
+<section class="how-we-started py-5 container-fluid">
+  <div class="row w-100">
+    <div class="col-md-6 text-center">
+<!-- Video Thumbnail -->
+      <div class="video-thumbnail position-relative d-inline-block">
+        <img class="img-fluid" src="assets/img/video_carousel_thumb-02-767x432-2x-756x426.jpg" alt="founder">
+
+        <!-- Play Button -->
+        <div class="play-button">
+          <span>&#9658;</span>
+        </div>
+      </div>
+    
+    <!-- Bootstrap Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content bg-dark">
+      <div class="modal-body p-0">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe id="videoFrame" class="embed-responsive-item" src="https://www.youtube.com/embed/qRrzBhIHgFQ?si=55IZeTkh8kufPjrQ" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></div>
+    <div class="col-md-6 d-flex align-items-center">
+      <div>
+<h4 class="heading-1">A meeting of the minds
+</h4>        <p>
+  Chris and Vital live a world apart, but their shared passion for learning brought them together to create Project Magu — an internet-enabled school in Vital’s remote village in Rwanda.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<div class="container-fluid number-div-2 mb-5 text-center pt-5 pb-5">
+
+  <h1 class="heading-1 text-center">Creating impact around the world
+</h1>
+
+<p>With our global catalog spanning the latest skills and topics, people and organizations<br> everywhere are able to adapt to change and thrive.</p>
+
+<div class="row text-center">
+
+  
+          <div class="col-6 col-md-2 mb-4 mb-md-0">
+            <div class="stats-number">81M</div>
+            <div class="stats-text">Learners</div>
+          </div>
+          <div class="col-6 col-md-2 mb-4 mb-md-0">
+            <div class="stats-number">77</div>
+            <div class="stats-text">Languages</div>
+          </div>
+          <div class="col-6 col-md-2 mb-4 mb-md-0">
+            <div class="stats-number">85K</div>
+            <div class="stats-text">Instructors</div>
+          </div>
+          <div class="col-6 col-md-2 mb-4 mb-md-0">
+            <div class="stats-number">250K+</div>
+            <div class="stats-text">Courses</div>
+          </div>
+          <div class="col-12 col-md-2 mb-4 mb-md-0">
+            <div class="stats-number">17K+</div>
+            <div class="stats-text">Enterprise customers</div>
+          </div>
+          <div class="col-12 col-md-2 mb-4 mb-md-0">
+            <div class="stats-number">1.1B</div>
+            <div class="stats-text">Course enrollments</div>
+          </div>
+        </div>
+
+
+</div>
+
+
+
+
+<section class="our-origins container">
+ <center>
+   <div class="newtextdis">
+    <p>
+We help organizations of all types and sizes prepare for the path ahead — wherever it leads. Our curated collection of business and technical courses help companies, governments, and nonprofits go further by placing learning at the center of their strategies.
+
+  </p>
+  <button class="btn main-btn mt-2">Learn more</button>
+  </div>
+ </center>
+</section>
+
+
+
+
+
+
+
+  <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #fff;
+        color: #1c1d1f;
+      }
+      .case-section {
+        padding: 60px 20px;
+      }
+      .case-box {
+        margin-bottom: 40px;
+        position: relative;
+      }
+      .case-box p {
+        font-size: 22px;
+        line-height: 1.5;
+        font-weight: 400;
+        margin-bottom: 30px;
+        position: relative;
+      }
+      .case-author {
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+      .case-role {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 10px;
+      }
+      .case-link a {
+        color: #f26e25;
+        font-weight: bold;
+        font-size: 15px;
+        text-decoration: none;
+      }
+      .case-link a:hover {
+        text-decoration: underline;
+      }
+      /* Align quotes nicely */
+  
+      @media (max-width: 991.98px) {
+        .case-box p {
+          font-size: 18px;
+        }
+      }
+    </style>
+    
+    <section class="case-section container">
+      <div class="row">
+        <!-- 1st Column -->
+        <div class="col-lg-4 col-md-6">
+          <div class="case-box">
+            <img src="assets/img/aaa.png" alt="">
+            <p>
+              Udemy fit us like a glove. Their team curates fresh, up-to-date
+              courses from their marketplace and makes them available to customers.
+            </p>
+            <div class="case-author">Varun Patil</div>
+            <div class="case-role">Senior Manager of HR Development</div>
+            <div class="case-link">
+              <a href="#">Read the Synechron case study &rsaquo;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2nd Column -->
+        <div class="col-lg-4 col-md-6">
+          <div class="case-box">
+            <img src="assets/img/aaa.png" alt="">
+            <p>
+              In total, it was a big success, I would get emails about what a
+              fantastic resource it was.
+            </p>
+            <div class="case-author">Alfred Helmerich</div>
+            <div class="case-role">Executive Training Manager</div>
+            <div class="case-link">
+              <a href="#">Read the NTT DATA case study &rsaquo;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3rd Column -->
+        <div class="col-lg-4 col-md-6">
+          <div class="case-box">
+            <img src="assets/img/aaa.png" alt="">
+            <p>
+              Udemy responds to the needs of the business in an agile and global
+              manner. It’s truly the best solution for our employees and their careers.
+            </p>
+            <div class="case-author">Luz Santillana Romero</div>
+            <div class="case-role">Development and Engagement Director</div>
+            <div class="case-link">
+              <a href="#">Read the Indra case study &rsaquo;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+     <style>
+      .logo-section {
+        background: #f7f8f9;
+        padding: 50px 20px;
+        text-align: center;
+      }
+      .logo-section img {
+           max-height: 50px;
+        margin: 20px 40px;
+        opacity: 0.6;
+        transition: opacity 0.3s ease;
+      }
+      .logo-section img:hover {
+        opacity: 1;
+      }
+    </style>
+    <section class="logo-section">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-12 d-flex flex-wrap justify-content-center align-items-center">
+            <img src="assets/img/eventbrite-logo-grey.png" alt="Eventbrite">
+            <img src="assets/img/Citigroup_logo_gray_transp_background_200px.png" alt="Citi">
+            <img src="assets/img/vimeo-logo-gray-01.png" alt="Vimeo">
+            <img src="assets/img/Tata_logo.png" alt="Tata">
+            <img src="assets/img/Aflac_logo1.png" alt="Aflac">
+            <img src="assets/img/SurveyMonkey-logo-grey.png" alt="SurveyMonkey">
+            <img src="assets/img/Kaiser-logo-grey.png" alt="Kaiser Permanente">
+            <img src="assets/img/Nordea.png" alt="Nordea">
+            <img src="assets/img/VW-logo-grey.png" alt="Volkswagen">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+     <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #fff;
+        color: #1c1d1f;
+      }
+      .info-section {
+        padding: 60px 20px;
+      }
+      .info-box {
+        margin-bottom: 40px;
+      }
+      .info-box h3 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        position: relative;
+        padding-top: 20px;
+      }
+      .info-box h3::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 6px;
+        border-radius: 3px;
+      }
+      /* Colored top bars */
+      .info-box.work h3::before { background: #a435f0; }
+      .info-box.research h3::before { background: #5624d0; }
+      .info-box.blog h3::before { background: #0faeb8; }
+
+      .info-box p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      .info-link a {
+        font-size: 15px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .info-box.work .info-link a { color: #a435f0; }
+      .info-box.research .info-link a { color: #5624d0; }
+      .info-box.blog .info-link a { color: #0faeb8; }
+      .info-link a:hover {
+        text-decoration: underline;
+      }
+    </style>
+    
+    
+    <section class="info-section container">
+      <div class="row">
+        <!-- Work with us -->
+        <div class="col-lg-4 col-md-6">
+          <div class="info-box work">
+            <h3>Work with us</h3>
+            <p>
+              At Udemy, we’re all learners and instructors. We live out our values 
+              every day to create a culture that is diverse, inclusive, and committed 
+              to helping employees thrive.
+            </p>
+            <div class="info-link">
+              <a href="#">Join our team &rsaquo;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- See our research -->
+        <div class="col-lg-4 col-md-6">
+          <div class="info-box research">
+            <h3>See our research</h3>
+            <p>
+              We’re committed to improving lives through learning. Dig into our 
+              original research to learn about the forces that are shaping the 
+              modern workplace.
+            </p>
+            <div class="info-link">
+              <a href="#">Learn more &rsaquo;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Read our blog -->
+        <div class="col-lg-4 col-md-6">
+          <div class="info-box blog">
+            <h3>Read our blog</h3>
+            <p>
+              Want to know what we’ve been up to lately? Check out the Udemy blog 
+              to get the scoop on the latest news, ideas and projects, and more.
+            </p>
+            <div class="info-link">
+              <a href="#">Read now &rsaquo;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+<style>
+  .video-thumbnail {
+    cursor: pointer;
+  }
+  .video-thumbnail img {
+    border-radius: 6px;
+  }
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    transition: all 0.3s ease;
+  }
+  .video-thumbnail:hover .play-button {
+    transform: translate(-50%, -50%) scale(1.2);
+    background: rgba(0,0,0,0.8);
+  }
+</style>
+
+<script>
+  // Open video in modal
+  document.querySelector('.video-thumbnail').addEventListener('click', function() {
+    var videoSrc = "https://www.youtube.com/embed/qRrzBhIHgFQ?si=55IZeTkh8kufPjrQ"; // Replace with your video link
+    document.getElementById('videoFrame').src = videoSrc;
+    $('#videoModal').modal('show');
+  });
+
+  // Stop video on modal close
+  $('#videoModal').on('hidden.bs.modal', function () {
+    document.getElementById('videoFrame').src = "";
+  });
+</script>
+
+
+
+<!-- Footer Section -->
+<footer class="site-footer" style="background-color: #2a2b3f;">
+  <div class="footer-top d-inline-flex w-100 justify-content-between">
+    <p class="footer-heading">
+      Top companies choose <span class="highlight">Udemy Business</span> to build in-demand career skills.
+    </p>
+    <div class="footer-logos">
+      <img src="assets/img/eventbrite-light.svg" alt="Nasdaq">
+      <img src="assets/img/nasdaq-light.svg" alt="NetApp">
+      <img src="assets/img/netapp-light.svg" alt="Eventbrite">
+      <img src="assets/img/volkswagen-light.svg" alt="Eventbrite">
+    </div>
+  </div>
+
+  <!-- Footer Grid Links -->
+  <div class="footer-links">
+    <div>
+      <h4>In-demand Careers</h4>
+      <ul>
+        <li>Data Scientist</li>
+        <li>Full Stack Web Developer</li>
+        <li>Cloud Engineer</li>
+        <li>Project Manager</li>
+        <li>Game Developer</li>
+        <li>All Career Accelerators</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Web Development</h4>
+      <ul>
+        <li>Web Development</li>
+        <li>JavaScript</li>
+        <li>React JS</li>
+        <li>Angular</li>
+        <li>Java</li>
+      </ul>
+    </div>
+    <div>
+      <h4>IT Certifications</h4>
+      <ul>
+        <li>Amazon AWS</li>
+        <li>AWS Certified Cloud Practitioner</li>
+        <li>AZ-900: Microsoft Azure Fundamentals</li>
+        <li>AWS Certified Solutions Architect</li>
+        <li>Kubernetes</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Leadership</h4>
+      <ul>
+        <li>Leadership</li>
+        <li>Management Skills</li>
+        <li>Project Management</li>
+        <li>Personal Productivity</li>
+        <li>Emotional Intelligence</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Certifications by Skill</h4>
+      <ul>
+        <li>Cybersecurity Certification</li>
+        <li>Project Management Certification</li>
+        <li>Cloud Certification</li>
+        <li>Data Analytics Certification</li>
+        <li>HR Management Certification</li>
+        <li>See all Certifications</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Data Science</h4>
+      <ul>
+        <li>Data Science</li>
+        <li>Python</li>
+        <li>Machine Learning</li>
+        <li>ChatGPT</li>
+        <li>Deep Learning</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Communication</h4>
+      <ul>
+        <li>Communication Skills</li>
+        <li>Presentation Skills</li>
+        <li>Public Speaking</li>
+        <li>Writing</li>
+        <li>PowerPoint</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Business Analytics & Intelligence</h4>
+      <ul>
+        <li>Microsoft Excel</li>
+        <li>SQL</li>
+        <li>Microsoft Power BI</li>
+        <li>Data Analysis</li>
+        <li>Business Analysis</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Footer -->
+  <div class="footer-bottom" style="background-color: #1c1d29;">
+    <div class="footer-col">
+      <h4>About</h4>
+      <ul>
+        <li>About us</li>
+        <li>Careers</li>
+        <li>Contact us</li>
+        <li>Blog</li>
+        <li>Investors</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Discover Udemy</h4>
+      <ul>
+        <li>Get the app</li>
+        <li>Teach on Udemy</li>
+        <li>Plans and Pricing</li>
+        <li>Affiliate</li>
+        <li>Help and Support</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Udemy for Business</h4>
+      <ul>
+        <li>Udemy Business</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal & Accessibility</h4>
+      <ul>
+        <li>Accessibility statement</li>
+        <li>Privacy policy</li>
+        <li>Sitemap</li>
+        <li>Terms</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-copy" style="background-color: #1c1d29;">
+    <div class="copy-left">
+      <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="Udemy Logo" height="20">
+      <span>© 2025 Udemy, Inc.</span>
+    </div>
+    <div class="copy-right">
+      <a href="#">Cookie settings</a>
+      <a href="#"><i class="fa-regular fa-globe"></i> English</a>
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+  <!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</html>
