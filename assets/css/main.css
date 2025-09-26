@@ -697,3 +697,137 @@ font-size: 19px;
     width: auto;
   }
 }
+
+.sidebar-card {
+    position: absolute;
+    /* instead of absolute */
+
+    top: 40px;
+    /* black + white overlay control */
+    right: 0;
+
+    border-radius: 12px;
+    background: #fff;
+    z-index: 2;
+  }
+
+  .white-section {
+    background: #fff;
+  }
+
+  /* Tabs style */
+  .card-tabs .nav-link {
+    border: none;
+    font-weight: 600;
+    color: #555;
+  }
+
+  .card-tabs .nav-link.active {
+    color: #000;
+    border-bottom: 3px solid #007bff;
+    /* underline active */
+  }
+
+  @media (max-width: 767px) {
+    .sidebar-card {
+      position: relative;
+      width: 100%;
+      margin-bottom: 50px;
+      /* remove shadow for natural section look */
+    }
+  }
+
+    /* Udemy-style header */
+        .course-header {
+            background-color: #1c1d1f;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .course-title {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-left: 15px;
+        }
+
+        .left-section {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Progress circle */
+        .progress-circle {
+            position: relative;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: conic-gradient(#a435f0 var(--progress), #444 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+        }
+
+        .progress-circle::after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #1c1d1f;
+        }
+
+        .progress-text {
+            font-size: 0.9rem;
+            margin-left: 4px;
+            cursor: pointer;
+        }
+
+        /* Tabs underline style */
+        .nav-tabs {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .nav-tabs .nav-link {
+            border: none;
+            color: #555;
+            font-weight: 500;
+        }
+
+        .nav-tabs .nav-link.active {
+            border-bottom: 3px solid #000;
+            color: #000;
+            font-weight: 600;
+        }
+
+         .nav-tabs .nav-link {
+        border: none;
+        color: #555;
+        font-weight: 500;
+        position: relative;
+    }
+
+    .nav-tabs .nav-link.active {
+        color: #000;
+    }
+
+    .nav-tabs .nav-link::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #f26e25;
+        /* underline color */
+        transition: width 0.3s;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .nav-tabs .nav-link.active::after {
+        width: 100%;
+    }
