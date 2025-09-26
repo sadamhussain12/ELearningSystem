@@ -12,12 +12,52 @@
 
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
+<style>
+   .sidebar-card {
+    position: absolute;
+    /* instead of absolute */
+
+    top: 40px;
+    /* black + white overlay control */
+    right: 0;
+
+    border-radius: 12px;
+    background: #fff;
+    z-index: 2;
+  }
+
+  .white-section {
+    background: #fff;
+  }
+
+  /* Tabs style */
+  .card-tabs .nav-link {
+    border: none;
+    font-weight: 600;
+    color: #555;
+  }
+
+  .card-tabs .nav-link.active {
+    color: #000;
+    border-bottom: 3px solid #007bff;
+    /* underline active */
+  }
+
+  @media (max-width: 767px) {
+    .sidebar-card {
+      position: relative;
+      width: 100%;
+      margin-bottom: 50px;
+      /* remove shadow for natural section look */
+    }
+  }
+</style>
 <body>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-custom">
     <a class="navbar-brand font-weight-bold" href="#">
-      <h6>E-learing</h6>
+      <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" height="28" alt="Logo">
     </a>
 
 
@@ -37,8 +77,8 @@
     <!-- Left menu (Explore + other links) visible on large -->
     <ul class="navbar-nav ml-3 d-none d-lg-flex top-header for-respon">
       <li class="nav-item"><a class="nav-link" href="#">Plans & Pricing</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">E-learing Business</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Teach on E-learing</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Udemy Business</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Teach on Udemy</a></li>
     </ul>
 
     <!-- Right side -->
@@ -88,8 +128,8 @@
     <ul class="top-header">
       <li><a href="#">Explore</a></li>
       <li><a href="#">Plans & Pricing</a></li>
-      <li><a href="#">E-learing Business</a></li>
-      <li><a href="#">Teach on E-learing</a></li>
+      <li><a href="#">Udemy Business</a></li>
+      <li><a href="#">Teach on Udemy</a></li>
       <li class="nav-item ">
         <button class="btn secondary-btn">Log in</button>
       </li>
@@ -179,7 +219,7 @@
                     </div>
 
                     <div class="border rounded p-2 mb-2 small">
-                      <span class="text-muted">MT250915G1</span> is applied E-learing coupon
+                      <span class="text-muted">MT250915G1</span> is applied Udemy coupon
                     </div>
 
                     <div class="input-group mb-3">
@@ -191,7 +231,7 @@
 
                     <hr>
 
-                    <h6 class="font-weight-bold">Subscribe to E-learing’s top courses</h6>
+                    <h6 class="font-weight-bold">Subscribe to Udemy’s top courses</h6>
                     <p class="small">
                       Get this course, plus 26,000+ of our top-rated courses with Personal Plan.
                       <a href="#">Learn more</a>
@@ -206,15 +246,15 @@
                   <!-- Team Tab -->
                   <div class="tab-pane fade" id="team">
                     <div class="mb-3">
-                      <img src="assets/img/logo-ub.svg" alt="E-learing Business" class="img-fluid mb-2"
+                      <img src="assets/img/logo-ub.svg" alt="Udemy Business" class="img-fluid mb-2"
                         style="max-height:30px; align-items: start;">
                     </div>
 
                     <p class="small mb-3">
-                      Subscribe to this course and 30,000+ top-rated E-learing courses for your organization.
+                      Subscribe to this course and 30,000+ top-rated Udemy courses for your organization.
                     </p>
 
-                    <button class="btn main-btn btn-block mb-4">Try E-learing Business</button>
+                    <button class="btn main-btn btn-block mb-4">Try Udemy Business</button>
 
                     <ul class="list-unstyled small pl-3">
                       <li class="mb-2">
@@ -549,7 +589,7 @@
                       Welcome to the 100 Days of Code - The Complete Python Pro Bootcamp,
                       <strong>the only course you need</strong> to learn to code with Python.
                       With over 500,000 <strong>5 STAR reviews</strong> and a 4.8 average, my courses are some of the
-                      HIGHEST RATED courses in the history of E-learing!
+                      HIGHEST RATED courses in the history of Udemy!
                       <strong>100 days, 1 hour per day, learn to build 1 project per day, this is how you master
                         Python.</strong>
                       At 60+ hours, this Python course is without a doubt the
@@ -903,7 +943,7 @@
 
                       <div class="d-flex align-items-start">
                         <!-- Instructor Image -->
-                        <img src="https://img-c.E-learingcdn.com/user/200_H/31334738_a13c.jpg" alt="Instructor"
+                        <img src="https://img-c.udemycdn.com/user/200_H/31334738_a13c.jpg" alt="Instructor"
                           class="rounded-circle mr-4" width="100" height="100">
 
                         <!-- Instructor Info -->
@@ -1206,7 +1246,7 @@
   <footer class="site-footer" style="background-color: #2a2b3f;">
     <div class="footer-top d-inline-flex w-100 justify-content-between">
       <p class="footer-heading">
-        Top companies choose <span class="highlight">E-learing Business</span> to build in-demand career skills.
+        Top companies choose <span class="highlight">Udemy Business</span> to build in-demand career skills.
       </p>
       <div class="footer-logos">
         <img src="assets/img/eventbrite-light.svg" alt="Nasdaq">
@@ -1315,19 +1355,19 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Discover E-learing</h4>
+        <h4>Discover Udemy</h4>
         <ul>
           <li>Get the app</li>
-          <li>Teach on E-learing</li>
+          <li>Teach on Udemy</li>
           <li>Plans and Pricing</li>
           <li>Affiliate</li>
           <li>Help and Support</li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>E-learing for Business</h4>
+        <h4>Udemy for Business</h4>
         <ul>
-          <li>E-learing Business</li>
+          <li>Udemy Business</li>
         </ul>
       </div>
       <div class="footer-col">
@@ -1344,8 +1384,8 @@
     <!-- Copyright -->
     <div class="footer-copy" style="background-color: #1c1d29;">
       <div class="copy-left">
-        <img src="https://www.E-learing.com/staticx/E-learing/images/v7/logo-E-learing-inverted.svg" alt="E-learing Logo" height="20">
-        <span>© 2025 E-learing, Inc.</span>
+        <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="Udemy Logo" height="20">
+        <span>© 2025 Udemy, Inc.</span>
       </div>
       <div class="copy-right">
         <a href="#">Cookie settings</a>
