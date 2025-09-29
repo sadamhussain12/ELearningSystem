@@ -1,0 +1,1394 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <title>Hello, world!</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand font-weight-bold" href="#">
+      <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" height="28" alt="Logo">
+    </a>
+
+
+
+    <!-- Left menu (Explore + other links) visible on large -->
+    <ul class="navbar-nav ml-3 d-none d-lg-flex top-header">
+      <li class="nav-item"><a class="nav-link" href="#">Explore</a></li>
+    </ul>
+
+    <!-- Desktop Search aaaa-->
+    <form class="mx-3 flex-grow-1 d-none d-lg-block search-form-pc-larg">
+      <div class="search-box">
+        <input class="form-control" type="text" placeholder="Search for anything">
+      </div>
+    </form>
+
+    <!-- Left menu (Explore + other links) visible on large -->
+    <ul class="navbar-nav ml-3 d-none d-lg-flex top-header for-respon">
+      <li class="nav-item"><a class="nav-link" href="#">Plans & Pricing</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Udemy Business</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Teach on Udemy</a></li>
+    </ul>
+
+    <!-- Right side -->
+    <ul class="navbar-nav ml-auto align-items-center top-header" style="    display: ruby;">
+      <!-- Mobile search icon -->
+      <li class="nav-item d-lg-none mx-2">
+        <a href="#" id="mobileSearchBtn"><i class="fa-solid fa-magnifying-glass"></i></a>
+      </li>
+
+      <!-- Cart -->
+      <li class="nav-item mx-2 pt-2 pb-2">
+        <a class="nav-link" href="#"><i class="fa-regular fa-cart-shopping"></i></a>
+      </li>
+
+      <!-- Auth & language (only on large) -->
+      <li class="nav-item d-none d-lg-block mx-1">
+        <button class="btn secondary-btn">Log in</button>
+      </li>
+      <li class="nav-item d-none d-lg-block mx-1">
+        <button class="btn main-btn">Sign up</button>
+      </li>
+      <li class="nav-item d-none d-lg-block mx-1">
+        <button class="btn secondary-btn"><i class="fa-solid fa-globe"></i></button>
+      </li>
+
+      <!-- Mobile toggle -->
+      <li class="nav-item d-lg-none">
+        <button class="navbar-toggler" type="button" id="menuToggleBtn">
+          <span><i class="fa-solid fa-bars"></i></span>
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Mobile Search Overlay -->
+  <div class="mobile-search-overlay" id="mobileSearchOverlay">
+    <input type="text" placeholder="Search for anything">
+    <button id="closeSearch"><i class="fa-solid fa-times"></i></button>
+  </div>
+
+  <!-- Offcanvas Sidebar -->
+  <div class="offcanvas-menu" id="offcanvasMenu">
+    <div class="offcanvas-header">
+      <h5>Menu</h5>
+      <button id="closeMenu"><i class="fa-solid fa-times"></i></button>
+    </div>
+    <ul class="top-header">
+      <li><a href="#">Explore</a></li>
+      <li><a href="#">Plans & Pricing</a></li>
+      <li><a href="#">Udemy Business</a></li>
+      <li><a href="#">Teach on Udemy</a></li>
+      <li class="nav-item ">
+        <button class="btn secondary-btn">Log in</button>
+      </li>
+      <li class="nav-item ">
+        <button class="btn main-btn">Sign up</button>
+      </li>
+      <li class="nav-item">
+        <button class="btn secondary-btn"><i class="fa-solid fa-globe"></i> English</button>
+      </li>
+    </ul>
+  </div>
+
+
+
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- ================= TOP AREA (FULL BLACK) ================= -->
+      <div class="text-white w-100 " style="background-color: #000;">
+        <div class="col-lg-9 col-11 mx-auto">
+          <div class="row">
+            <!-- Left Content -->
+            <div class="col-lg-8  d-none d-md-block">
+              <!-- Breadcrumb -->
+              <div class="container py-3 pl-0">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb bg-transparent p-0">
+                    <li class="breadcrumb-item"><a href="#" class="text-light">Development</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-light">Programming Languages</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Python</li>
+                  </ol>
+                </nav>
+              </div>
+
+              <!-- Course Intro -->
+              <h2 class="font-weight-bold">100 Days of Code: The Complete Python Pro Bootcamp</h2>
+              <p class="lead">Master Python by building 100 projects in 100 days. Learn data science,
+                automation, build websites, games and apps!</p>
+
+              <span class="badge badge-info">Bestseller</span>
+              <span class="ml-2 text-warning"><i class="fas fa-star"></i> 4.7</span>
+              <a href="#" class="ml-1 text-light">(391,192 ratings)</a>
+              <span class="ml-2 text-muted">1,653,915 students</span>
+
+              <p class="mt-3">Created by <a href="#" class="text-info">Dr. Angela Yu, Developer and
+                  Lead Instructor</a></p>
+              <p class="text-muted"><i class="fas fa-sync-alt"></i> Last updated 8/2025 • English,
+                Arabic [Auto], 27 more</p>
+            </div>
+
+            <!-- Right Sidebar Card (Overlay Style with Tabs) -->
+            <div class="col-lg-4 mb-5 mt-4">
+              <div class="card shadow sidebar-card">
+                <img src="assets/img/Screenshot 2025-09-10 230911.png" class="card-img-top" alt="Course Thumbnail">
+
+                <!-- Tabs -->
+                <ul class="nav nav-tabs card-tabs mb-3 pt-2" id="planTabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#personal">Personal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#team">Team</a>
+                  </li>
+                </ul>
+
+                <div class="card-body text-dark tab-content">
+                  <!-- Personal Tab -->
+                  <div class="tab-pane fade show active" id="personal">
+                    <!-- Price / Discount section from screenshot -->
+                    <h3 class="font-weight-bold mb-0">$9.99
+                      <small class="text-muted"><s>$49.99</s></small>
+                      <span class="small" style="font-size: medium;">80% off</span>
+                    </h3>
+                    <p class="text-danger mb-3 small"><i class="fa fa-clock-o"></i> 2 days left at this price!</p>
+
+                    <button class="btn main-btn btn-block mb-2">Add to cart</button>
+                    <button class="btn secondary-btn btn-block mb-3">Buy now</button>
+
+                    <p class="small text-center mb-1">30-Day Money-Back Guarantee</p>
+                    <p class="small text-center mb-3">Full Lifetime Access</p>
+
+                    <div class="d-flex justify-content-around mb-3 small font-weight-bold">
+                      <a href="#" style="color: var(--primary-color);">Share</a>
+                      <a href="#" style="color: var(--primary-color);">Gift this course</a>
+                      <a href="#" style="color: var(--primary-color);">Apply Coupon</a>
+                    </div>
+
+                    <div class="border rounded p-2 mb-2 small">
+                      <span class="text-muted">MT250915G1</span> is applied Udemy coupon
+                    </div>
+
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Enter Coupon">
+                      <div class="input-group-append">
+                        <button class="btn main-btn">Apply</button>
+                      </div>
+                    </div>
+
+                    <hr>
+
+                    <h6 class="font-weight-bold">Subscribe to Udemy’s top courses</h6>
+                    <p class="small">
+                      Get this course, plus 26,000+ of our top-rated courses with Personal Plan.
+                      <a href="#">Learn more</a>
+                    </p>
+
+                    <button class="btn secondary-btn btn-block mb-2">Try Personal Plan for free</button>
+                    <p class="small text-center text-muted mb-0">
+                      Starting at $11.00 per month after trial
+                    </p>
+                  </div>
+
+                  <!-- Team Tab -->
+                  <div class="tab-pane fade" id="team">
+                    <div class="mb-3">
+                      <img src="assets/img/logo-ub.svg" alt="Udemy Business" class="img-fluid mb-2"
+                        style="max-height:30px; align-items: start;">
+                    </div>
+
+                    <p class="small mb-3">
+                      Subscribe to this course and 30,000+ top-rated Udemy courses for your organization.
+                    </p>
+
+                    <button class="btn main-btn btn-block mb-4">Try Udemy Business</button>
+
+                    <ul class="list-unstyled small pl-3">
+                      <li class="mb-2">
+                        <i class="fa fa-users mr-2"></i> For teams of 2 or more users
+                      </li>
+                      <li class="mb-2">
+                        <i class="fa fa-book mr-2"></i> 30,000+ fresh &amp; in-demand courses
+                      </li>
+                      <li class="mb-2">
+                        <i class="fa fa-chart-line mr-2"></i> Learning Engagement tools
+                      </li>
+                      <li>
+                        <i class="fa fa-lock mr-2"></i> SSO and LMS Integrations
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- End Right Sidebar -->
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= WHITE SECTION ================= -->
+      <div class="white-section py-5 w-100">
+        <div class="col-lg-9 col-11 mx-auto">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="card bg-light">
+                <div class="card-body">
+                  <h5 class="font-weight-bold">What you'll learn</h5>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success"></i> Master Python with 100 unique projects</li>
+                        <li><i class="fas fa-check text-success"></i> Program in Python professionally</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success"></i> Learn automation, apps, games & web</li>
+                        <li><i class="fas fa-check text-success"></i> Learn Flask, Pandas, NumPy, Matplotlib</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success"></i> Master Python with 100 unique projects</li>
+                        <li><i class="fas fa-check text-success"></i> Program in Python professionally</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success"></i> Learn automation, apps, games & web</li>
+                        <li><i class="fas fa-check text-success"></i> Learn Flask, Pandas, NumPy, Matplotlib</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success"></i> Master Python with 100 unique projects</li>
+                        <li><i class="fas fa-check text-success"></i> Program in Python professionally</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success"></i> Learn automation, apps, games & web</li>
+                        <li><i class="fas fa-check text-success"></i> Learn Flask, Pandas, NumPy, Matplotlib</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success"></i> Master Python with 100 unique projects</li>
+                        <li><i class="fas fa-check text-success"></i> Program in Python professionally</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success"></i> Learn automation, apps, games & web</li>
+                        <li><i class="fas fa-check text-success"></i> Learn Flask, Pandas, NumPy, Matplotlib</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ================= RELATED TOPICS & COURSE INFO ================= -->
+            <div class="related-section py-5 w-100">
+              <div class="container mx-auto">
+                <div class="row">
+                  <!-- Left Content -->
+                  <div class="col-lg-8">
+                    <!-- Explore related topics -->
+                    <h5 class="font-weight-bold mb-3">Explore related topics</h5>
+                    <div class="mb-4">
+                      <a href="#" class="badge badge-light border mr-2 px-3 py-2">Python</a>
+                      <a href="#" class="badge badge-light border mr-2 px-3 py-2">Programming Languages</a>
+                      <a href="#" class="badge badge-light border mr-2 mt-2 px-3 py-2">Development</a>
+                    </div>
+
+                    <h5 class="fw-bold mb-4">This course includes:</h5>
+
+                    <div class="row row-cols-1 row-cols-md-2 g-3">
+
+                      <div class="col d-flex align-items-start">
+                        <i class="bi bi-play-circle fw-bold me-3 fs-3 text-dark"></i>
+                        <span class="fw-bold ml-3">39 hours on-demand video</span>
+                      </div>
+
+                      <div class="col d-flex align-items-start">
+                        <i class="bi bi-file-earmark-text fw-bold me-3 fs-3 text-dark"></i>
+                        <span class="fw-bold ml-3">185-page downloadable e-book</span>
+                      </div>
+
+                      <div class="col d-flex align-items-start">
+                        <i class="bi bi-infinity fw-bold me-3 fs-3 text-dark"></i>
+                        <span class="fw-bold ml-3">Full lifetime access</span>
+                      </div>
+
+                      <div class="col d-flex align-items-start">
+                        <i class="bi bi-phone fw-bold me-3 fs-3 text-dark"></i>
+                        <span class="fw-bold ml-3">Access on mobile and TV</span>
+                      </div>
+
+                      <div class="col d-flex align-items-start">
+                        <i class="bi bi-patch-check fw-bold me-3 fs-3 text-dark"></i>
+                        <span class="fw-bold ml-3">Certificate of completion</span>
+                      </div>
+
+                      <div class="col d-flex align-items-start">
+                        <i class="bi bi-cc-square fw-bold me-3 fs-3 text-dark"></i>
+                        <span class="fw-bold ml-3">Closed captions</span>
+                      </div>
+
+                    </div>
+
+                    <div class="card bg-light mt-5">
+                      <div class="card-body"> <!-- ================= CODING EXERCISES SECTION ================= -->
+
+                        <div class="row align-items-center">
+                          <!-- Left Text -->
+                          <div class="col-lg-6 mb-4 mb-lg-0">
+                            <h3 class="font-weight-bold">Coding Exercises</h3>
+                            <p class="text-muted">
+                              This course includes our updated coding exercises so you can practice your skills as you
+                              learn.
+                            </p>
+                            <a href="#" class="font-weight-bold" style="color: var(--primary-color);">See a demo</a>
+                          </div>
+
+                          <!-- Right Image -->
+                          <div class="col-lg-6 text-center">
+                            <img
+                              src="assets/img/coding-exercises-demo-preview-desktop.2957bed27c3ae43a02824b61ad9cda03.png"
+                              alt="Coding Exercises Demo" class="img-fluid rounded shadow">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ================= END CODING EXERCISES SECTION ================= -->
+
+
+                    <!-- ================= COURSE CONTENT ================= -->
+                    <h5 class="font-weight-bold mt-5 mb-3">Course content</h5>
+                    <p class="text-muted small mb-4">
+                      54 sections • 519 lectures • 39h 22m total length
+                      <a href="#" id="expandAll" class="float-right font-weight-bold text-primary">Expand all
+                        sections</a>
+
+                    </p>
+
+                    <div class="accordion" id="courseAccordion">
+                      <!-- Section 1 -->
+                      <div class="card mb-2">
+                        <div class="card-header p-0" id="headingOne">
+                          <h6 class="mb-0">
+                            <button class="btn btn-block text-left p-3" type="button" data-toggle="collapse"
+                              data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              The Complete AI Guide Introduction
+                            </button>
+                          </h6>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+                          <div class="card-body py-2">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <span>Start Here First (Important Course Details)</span>
+                              <span class="text-muted small">4min</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <span>Sneak Peek of What's to Come + 185-Page E-Book</span>
+                              <span class="text-muted small">2min</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Section 2 -->
+                      <div class="card mb-2">
+                        <div class="card-header p-0" id="headingTwo">
+                          <h6 class="mb-0">
+                            <button class="btn btn-block text-left p-3 collapsed" type="button" data-toggle="collapse"
+                              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Getting Started with ChatGPT, Prompting, and How LLM's Work
+                            </button>
+                          </h6>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                          <div class="card-body py-2">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <span>Intro to Large Language Models</span>
+                              <span class="text-muted small">1hr 18min</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Section 3 -->
+                      <div class="card mb-2">
+                        <div class="card-header p-0" id="headingThree">
+                          <h6 class="mb-0">
+                            <button class="btn btn-block text-left p-3 collapsed" type="button" data-toggle="collapse"
+                              data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Building Your First Python Project
+                            </button>
+                          </h6>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                          <div class="card-body py-2">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <span>Setting Up Your Environment</span>
+                              <span class="text-muted small">25min</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <span>Writing Your First Script</span>
+                              <span class="text-muted small">30min</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Section 4 -->
+                      <div class="card mb-2">
+                        <div class="card-header p-0" id="headingFour">
+                          <h6 class="mb-0">
+                            <button class="btn btn-block text-left p-3 collapsed" type="button" data-toggle="collapse"
+                              data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              Data Science Essentials
+                            </button>
+                          </h6>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+                          <div class="card-body py-2">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <span>Intro to Pandas</span>
+                              <span class="text-muted small">45min</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <span>Data Cleaning Basics</span>
+                              <span class="text-muted small">35min</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Section 5 -->
+                      <div class="card mb-2">
+                        <div class="card-header p-0" id="headingFive">
+                          <h6 class="mb-0">
+                            <button class="btn btn-block text-left p-3 collapsed" type="button" data-toggle="collapse"
+                              data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                              Web Development with Flask
+                            </button>
+                          </h6>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive">
+                          <div class="card-body py-2">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <span>Flask Basics</span>
+                              <span class="text-muted small">1hr 5min</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <span>Building Your First Web App</span>
+                              <span class="text-muted small">50min</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Section 6 -->
+                      <div class="card mb-2">
+                        <div class="card-header p-0" id="headingSix">
+                          <h6 class="mb-0">
+                            <button class="btn btn-block text-left p-3 collapsed" type="button" data-toggle="collapse"
+                              data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                              Final Project & Deployment
+                            </button>
+                          </h6>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix">
+                          <div class="card-body py-2">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <span>Building the Capstone Project</span>
+                              <span class="text-muted small">2hr 10min</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <span>Deploying to the Cloud</span>
+                              <span class="text-muted small">40min</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <!-- Add more sections as needed -->
+                    </div>
+
+                    <!-- ================= REQUIREMENTS ================= -->
+                    <h5 class="font-weight-bold mt-5 mb-3">Requirements</h5>
+                    <ul class="text-muted small mb-4">
+                      <li>No programming experience needed - I'll teach you everything you need to know</li>
+                      <li>A 64-bit Mac or PC computer with 4GB of memory and access to the internet</li>
+                      <li>No paid software required - I'll teach you how to use PyCharm, Jupyter Notebooks and Google
+                        Colab</li>
+                      <li>I'll walk you through, step-by-step how to get all the software installed and set up</li>
+                    </ul>
+
+                    <!-- ================= DESCRIPTION ================= -->
+                    <h5 class="font-weight-bold mt-3 mb-3">Description</h5>
+                    <p class="text-muted small">
+                      Welcome to the 100 Days of Code - The Complete Python Pro Bootcamp,
+                      <strong>the only course you need</strong> to learn to code with Python.
+                      With over 500,000 <strong>5 STAR reviews</strong> and a 4.8 average, my courses are some of the
+                      HIGHEST RATED courses in the history of Udemy!
+                      <strong>100 days, 1 hour per day, learn to build 1 project per day, this is how you master
+                        Python.</strong>
+                      At 60+ hours, this Python course is without a doubt the
+                      <strong>most comprehensive</strong> Python course available anywhere online.
+                      Even if you have <strong>zero</strong> programming experience, this course will take you from
+                      <strong>beginner to professional</strong>. Here's why:
+                    </p>
+                    <ul class="text-muted small">
+                      <li>The course is taught by the <strong>lead instructor</strong> at the App Brewery,
+                        London's <strong>best in-person programming Bootcamp</strong>.</li>
+                      <li>The course has been updated and you'll be learning the latest tools and technologies
+                        used at large companies.</li>
+                    </ul>
+
+                    <a href="#" class="font-weight-bold small" style="color: var(--primary-color);">Show more
+                      <span>&#9662;</span></a>
+
+                    <!-- ================= STUDENTS ALSO BOUGHT ================= -->
+                    <h5 class="font-weight-bold mt-5 mb-3">Students also bought</h5>
+
+                    <div class="list-group">
+
+                      <!-- Course Item 1 -->
+                      <div
+                        class="list-group-item d-flex flex-column flex-md-row align-items-start align-items-md-center">
+                        <img src="assets/img/img1.png" alt="Course" class="rounded mb-2 mb-md-0 mr-md-3"
+                          style="width:70px; height:70px; object-fit:cover;">
+                        <div class="flex-grow-1">
+                          <h6 class="mb-1 font-weight-bold">The Complete Python Bootcamp From Zero to Hero in Python
+                          </h6>
+                          <small class="text-success font-weight-bold">22.5 total hours</small>
+                          <small class="text-muted"> • Updated 8/2025</small>
+                        </div>
+                        <div class="text-left text-md-right mt-2 mt-md-0 ml-md-3">
+                          <div>
+                            <span class="text-warning font-weight-bold">4.6 ★</span>
+                            <small class="text-muted ml-1"><i class="fa fa-users"></i> 2,089,269</small>
+                          </div>
+                          <div>
+                            <span class="font-weight-bold">$13.99</span>
+                            <small class="text-muted"><del>$64.99</del></small>
+                          </div>
+                        </div>
+                        <button
+                          class="btn btn-light border ml-md-3 mt-2 mt-md-0 rounded-circle align-self-md-center align-self-end">
+                          <i class="far fa-heart text-purple"></i>
+                        </button>
+                      </div>
+
+                      <!-- Course Item 2 -->
+                      <div
+                        class="list-group-item d-flex flex-column flex-md-row align-items-start align-items-md-center">
+                        <img src="assets/img/img2.png" alt="Course" class="rounded mb-2 mb-md-0 mr-md-3"
+                          style="width:70px; height:70px; object-fit:cover;">
+                        <div class="flex-grow-1">
+                          <h6 class="mb-1 font-weight-bold">The Complete Full-Stack Web Development Bootcamp</h6>
+                          <span class="badge badge-success">Bestseller</span>
+                          <small class="text-success font-weight-bold ml-2">61.5 total hours</small>
+                          <small class="text-muted"> • Updated 2/2025</small>
+                        </div>
+                        <div class="text-left text-md-right mt-2 mt-md-0 ml-md-3">
+                          <div>
+                            <span class="text-warning font-weight-bold">4.7 ★</span>
+                            <small class="text-muted ml-1"><i class="fa fa-users"></i> 1,496,806</small>
+                          </div>
+                          <div>
+                            <span class="font-weight-bold">$13.99</span>
+                            <small class="text-muted"><del>$64.99</del></small>
+                          </div>
+                        </div>
+                        <button
+                          class="btn btn-light border ml-md-3 mt-2 mt-md-0 rounded-circle align-self-md-center align-self-end">
+                          <i class="far fa-heart text-purple"></i>
+                        </button>
+                      </div>
+
+                      <!-- Course Item 3 -->
+                      <div
+                        class="list-group-item d-flex flex-column flex-md-row align-items-start align-items-md-center">
+                        <img src="assets/img/Screenshot 2025-09-10 230911.png" alt="Course"
+                          class="rounded mb-2 mb-md-0 mr-md-3" style="width:70px; height:70px; object-fit:cover;">
+                        <div class="flex-grow-1">
+                          <h6 class="mb-1 font-weight-bold">The Complete Full-Stack Web Development Bootcamp</h6>
+                          <span class="badge badge-success">Bestseller</span>
+                          <small class="text-success font-weight-bold ml-2">61.5 total hours</small>
+                          <small class="text-muted"> • Updated 2/2025</small>
+                        </div>
+                        <div class="text-left text-md-right mt-2 mt-md-0 ml-md-3">
+                          <div>
+                            <span class="text-warning font-weight-bold">4.7 ★</span>
+                            <small class="text-muted ml-1"><i class="fa fa-users"></i> 1,496,806</small>
+                          </div>
+                          <div>
+                            <span class="font-weight-bold">$13.99</span>
+                            <small class="text-muted"><del>$64.99</del></small>
+                          </div>
+                        </div>
+                        <button
+                          class="btn btn-light border ml-md-3 mt-2 mt-md-0 rounded-circle align-self-md-center align-self-end">
+                          <i class="far fa-heart text-purple"></i>
+                        </button>
+                      </div>
+
+                      <!-- Course Item 4 -->
+                      <div
+                        class="list-group-item d-flex flex-column flex-md-row align-items-start align-items-md-center">
+                        <img src="assets/img/Screenshot 2025-09-10 230744.png" alt="Course"
+                          class="rounded mb-2 mb-md-0 mr-md-3" style="width:70px; height:70px; object-fit:cover;">
+                        <div class="flex-grow-1">
+                          <h6 class="mb-1 font-weight-bold">The Complete Full-Stack Web Development Bootcamp</h6>
+                          <span class="badge badge-success">Bestseller</span>
+                          <small class="text-success font-weight-bold ml-2">61.5 total hours</small>
+                          <small class="text-muted"> • Updated 2/2025</small>
+                        </div>
+                        <div class="text-left text-md-right mt-2 mt-md-0 ml-md-3">
+                          <div>
+                            <span class="text-warning font-weight-bold">4.7 ★</span>
+                            <small class="text-muted ml-1"><i class="fa fa-users"></i> 1,496,806</small>
+                          </div>
+                          <div>
+                            <span class="font-weight-bold">$13.99</span>
+                            <small class="text-muted"><del>$64.99</del></small>
+                          </div>
+                        </div>
+                        <button
+                          class="btn btn-light border ml-md-3 mt-2 mt-md-0 rounded-circle align-self-md-center align-self-end">
+                          <i class="far fa-heart text-purple"></i>
+                        </button>
+                      </div>
+
+                      <!-- Course Item 5 -->
+                      <div
+                        class="list-group-item d-flex flex-column flex-md-row align-items-start align-items-md-center">
+                        <img src="assets/img/img3.png" alt="Course" class="rounded mb-2 mb-md-0 mr-md-3"
+                          style="width:70px; height:70px; object-fit:cover;">
+                        <div class="flex-grow-1">
+                          <h6 class="mb-1 font-weight-bold">The Complete Full-Stack Web Development Bootcamp</h6>
+                          <span class="badge badge-success">Bestseller</span>
+                          <small class="text-success font-weight-bold ml-2">61.5 total hours</small>
+                          <small class="text-muted"> • Updated 2/2025</small>
+                        </div>
+                        <div class="text-left text-md-right mt-2 mt-md-0 ml-md-3">
+                          <div>
+                            <span class="text-warning font-weight-bold">4.7 ★</span>
+                            <small class="text-muted ml-1"><i class="fa fa-users"></i> 1,496,806</small>
+                          </div>
+                          <div>
+                            <span class="font-weight-bold">$13.99</span>
+                            <small class="text-muted"><del>$64.99</del></small>
+                          </div>
+                        </div>
+                        <button
+                          class="btn btn-light border ml-md-3 mt-2 mt-md-0 rounded-circle align-self-md-center align-self-end">
+                          <i class="far fa-heart text-purple"></i>
+                        </button>
+                      </div>
+
+                      <!-- Course Item 6 -->
+                      <div
+                        class="list-group-item d-flex flex-column flex-md-row align-items-start align-items-md-center">
+                        <img src="assets/img/img4.png" alt="Course" class="rounded mb-2 mb-md-0 mr-md-3"
+                          style="width:70px; height:70px; object-fit:cover;">
+                        <div class="flex-grow-1">
+                          <h6 class="mb-1 font-weight-bold">The Complete Full-Stack Web Development Bootcamp</h6>
+                          <span class="badge badge-success">Bestseller</span>
+                          <small class="text-success font-weight-bold ml-2">61.5 total hours</small>
+                          <small class="text-muted"> • Updated 2/2025</small>
+                        </div>
+                        <div class="text-left text-md-right mt-2 mt-md-0 ml-md-3">
+                          <div>
+                            <span class="text-warning font-weight-bold">4.7 ★</span>
+                            <small class="text-muted ml-1"><i class="fa fa-users"></i> 1,496,806</small>
+                          </div>
+                          <div>
+                            <span class="font-weight-bold">$13.99</span>
+                            <small class="text-muted"><del>$64.99</del></small>
+                          </div>
+                        </div>
+                        <button
+                          class="btn btn-light border ml-md-3 mt-2 mt-md-0 rounded-circle align-self-md-center align-self-end">
+                          <i class="far fa-heart text-purple"></i>
+                        </button>
+                      </div>
+
+                      <!-- Course Item 7 -->
+                      <div
+                        class="list-group-item d-flex flex-column flex-md-row align-items-start align-items-md-center">
+                        <img src="assets/img/img5.png" alt="Course" class="rounded mb-2 mb-md-0 mr-md-3"
+                          style="width:70px; height:70px; object-fit:cover;">
+                        <div class="flex-grow-1">
+                          <h6 class="mb-1 font-weight-bold">The Complete Full-Stack Web Development Bootcamp</h6>
+                          <span class="badge badge-success">Bestseller</span>
+                          <small class="text-success font-weight-bold ml-2">61.5 total hours</small>
+                          <small class="text-muted"> • Updated 2/2025</small>
+                        </div>
+                        <div class="text-left text-md-right mt-2 mt-md-0 ml-md-3">
+                          <div>
+                            <span class="text-warning font-weight-bold">4.7 ★</span>
+                            <small class="text-muted ml-1"><i class="fa fa-users"></i> 1,496,806</small>
+                          </div>
+                          <div>
+                            <span class="font-weight-bold">$13.99</span>
+                            <small class="text-muted"><del>$64.99</del></small>
+                          </div>
+                        </div>
+                        <button
+                          class="btn btn-light border ml-md-3 mt-2 mt-md-0 rounded-circle align-self-md-center align-self-end">
+                          <i class="far fa-heart text-purple"></i>
+                        </button>
+                      </div>
+
+                      <!-- Course Item 8 -->
+                      <div
+                        class="list-group-item d-flex flex-column flex-md-row align-items-start align-items-md-center">
+                        <img src="assets/img/img6.png" alt="Course" class="rounded mb-2 mb-md-0 mr-md-3"
+                          style="width:70px; height:70px; object-fit:cover;">
+                        <div class="flex-grow-1">
+                          <h6 class="mb-1 font-weight-bold">The Complete Full-Stack Web Development Bootcamp</h6>
+                          <span class="badge badge-success">Bestseller</span>
+                          <small class="text-success font-weight-bold ml-2">61.5 total hours</small>
+                          <small class="text-muted"> • Updated 2/2025</small>
+                        </div>
+                        <div class="text-left text-md-right mt-2 mt-md-0 ml-md-3">
+                          <div>
+                            <span class="text-warning font-weight-bold">4.7 ★</span>
+                            <small class="text-muted ml-1"><i class="fa fa-users"></i> 1,496,806</small>
+                          </div>
+                          <div>
+                            <span class="font-weight-bold">$13.99</span>
+                            <small class="text-muted"><del>$64.99</del></small>
+                          </div>
+                        </div>
+                        <button
+                          class="btn btn-light border ml-md-3 mt-2 mt-md-0 rounded-circle align-self-md-center align-self-end">
+                          <i class="far fa-heart text-purple"></i>
+                        </button>
+                      </div>
+
+                      <!-- Course Item 9 -->
+                      <div
+                        class="list-group-item d-flex flex-column flex-md-row align-items-start align-items-md-center">
+                        <img src="assets/img/img7.png" alt="Course" class="rounded mb-2 mb-md-0 mr-md-3"
+                          style="width:70px; height:70px; object-fit:cover;">
+                        <div class="flex-grow-1">
+                          <h6 class="mb-1 font-weight-bold">The Complete Full-Stack Web Development Bootcamp</h6>
+                          <span class="badge badge-success">Bestseller</span>
+                          <small class="text-success font-weight-bold ml-2">61.5 total hours</small>
+                          <small class="text-muted"> • Updated 2/2025</small>
+                        </div>
+                        <div class="text-left text-md-right mt-2 mt-md-0 ml-md-3">
+                          <div>
+                            <span class="text-warning font-weight-bold">4.7 ★</span>
+                            <small class="text-muted ml-1"><i class="fa fa-users"></i> 1,496,806</small>
+                          </div>
+                          <div>
+                            <span class="font-weight-bold">$13.99</span>
+                            <small class="text-muted"><del>$64.99</del></small>
+                          </div>
+                        </div>
+                        <button
+                          class="btn btn-light border ml-md-3 mt-2 mt-md-0 rounded-circle align-self-md-center align-self-end">
+                          <i class="far fa-heart text-purple"></i>
+                        </button>
+                      </div>
+
+                    </div>
+
+
+                    <!-- Show more button -->
+                    <div class="text-center mt-3">
+                      <button class="btn secondary-btn btn-block font-weight-bold px-4 py-2">Show more</button>
+                    </div>
+
+                    <!-- Frequently Bought Together -->
+                    <div class="card my-5">
+                      <div class="card-body">
+                        <h4 class="mb-4">Frequently Bought Together</h4>
+
+                        <!-- Course 1 -->
+                        <div class="d-flex align-items-start">
+                          <img src="assets/img/img6.png" alt="Course 1" class="img-fluid rounded mr-3"
+                            style="width: 120px; height: 80px; object-fit: cover;">
+                          <div class="flex-grow-1">
+                            <h6 class="mb-1">100 Days of Code: The Complete Python Pro Bootcamp</h6>
+                            <small class="text-muted">Dr. Angela Yu</small><br>
+                            <span class="text-warning">★★★★☆</span> <span class="text-muted">(391,442)</span>
+                            <span class="badge bg-success">Bestseller</span>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-weight-bold">$13.99</div>
+                            <small class="text-muted"><s>$64.99</s></small>
+                          </div>
+                        </div>
+
+                        <!-- Plus -->
+                        <div class="d-flex ml-5">
+                          <div class="rounded-circle border d-flex align-items-center justify-content-center "
+                            style="width:40px; height:40px; font-size: 30px;">+</div>
+                        </div>
+
+                        <!-- Course 2 -->
+                        <div class="d-flex align-items-start">
+                          <img src="assets/img/img3.png" alt="Course 2" class="img-fluid rounded mr-3"
+                            style="width: 120px; height: 80px; object-fit: cover;">
+                          <div class="flex-grow-1">
+                            <h6 class="mb-1">Python Mega Course: Build 20 Real-World Apps and AI Agents</h6>
+                            <small class="text-muted">Ardit Sulce</small><br>
+                            <span class="text-warning">★★★★☆</span> <span class="text-muted">(71,443)</span>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-weight-bold">$10.99</div>
+                            <small class="text-muted"><s>$64.99</s></small>
+                          </div>
+                        </div>
+
+                        <!-- Plus -->
+                        <div class="d-flex ml-5">
+                          <div class="rounded-circle border d-flex align-items-center justify-content-center "
+                            style="width:40px; height:40px; font-size: 30px;">+</div>
+                        </div>
+
+                        <!-- Course 3 -->
+                        <div class="d-flex align-items-start">
+                          <img src="assets/img/img1.png" alt="Course 3" class="img-fluid rounded mr-3"
+                            style="width: 120px; height: 80px; object-fit: cover;">
+                          <div class="flex-grow-1">
+                            <h6 class="mb-1">Tableau A-Z: Hands-On Tableau Training for Data Science</h6>
+                            <small class="text-muted">Kirill Eremenko</small><br>
+                            <span class="text-warning">★★★★☆</span> <span class="text-muted">(105,360)</span>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-weight-bold">$13.99</div>
+                            <small class="text-muted"><s>$69.99</s></small>
+                          </div>
+                        </div>
+
+                        <!-- Total + Button -->
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                          <div>
+                            <strong>Total: $38.97</strong>
+                            <small class="text-muted ml-2"><s>$199.97</s></small>
+                          </div>
+                          <button class="btn main-btn">Add all to cart</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Instructor Section -->
+                    <div class="card shadow-sm border-0 mt-5 p-4">
+                      <h4 class="mb-4">Instructor</h4>
+
+                      <div class="d-flex align-items-start">
+                        <!-- Instructor Image -->
+                        <img src="https://img-c.udemycdn.com/user/200_H/31334738_a13c.jpg" alt="Instructor"
+                          class="rounded-circle mr-4" width="100" height="100">
+
+                        <!-- Instructor Info -->
+                        <div>
+                          <h5 class="mb-1">
+                            <a href="#" class="text-primary font-weight-bold">
+                              Dr. Angela Yu, Developer and Lead Instructor
+                            </a>
+                          </h5>
+                          <p class="text-muted mb-3">Developer and Lead Instructor</p>
+
+                          <div class="row text-muted small mb-3">
+                            <div class="col-6 mb-2">
+                              <i class="fas fa-star mr-2"></i> 4.7 Instructor Rating
+                            </div>
+                            <div class="col-6 mb-2">
+                              <i class="fas fa-comment mr-2"></i> 1,002,158 Reviews
+                            </div>
+                            <div class="col-6 mb-2">
+                              <i class="fas fa-user-graduate mr-2"></i> 3,272,961 Students
+                            </div>
+                            <div class="col-6 mb-2">
+                              <i class="fas fa-play-circle mr-2"></i> 7 Courses
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Instructor Bio -->
+                      <p class="mt-3">
+                        I'm Angela, I'm a developer with a passion for teaching.
+                        I'm the <strong>lead instructor</strong> at the London App Brewery,
+                        London's leading <strong>Programming Bootcamp</strong>.
+                        I've helped hundreds of thousands of students learn to code and change their lives
+                        by becoming a developer. I've been invited by companies such as
+                        Twitter, Facebook and Google to teach their employees.
+                      </p>
+                      <p>
+                        My first foray into programming was when I was just 12 years old, wanting to build my own Space
+                        Invader game.
+                        Since then, I've made <strong>hundreds of websites, apps and games</strong>.
+                        But most importantly, I realised that my <strong>greatest passion</strong> is teaching.
+                      </p>
+
+                      <!-- Show more -->
+                      <a href="#" class="text-primary small font-weight-bold">
+                        Show more <i class="fas fa-chevron-down"></i>
+                      </a>
+                    </div>
+
+                    <!-- ================= REVIEWS ================= -->
+                    <div class="container my-5">
+                      <h5 class="font-weight-bold mb-1">
+                        <i class="fa fa-star text-warning"></i> 4.7 course rating • 392K ratings
+                      </h5>
+                      <hr>
+
+                      <div class="row">
+                        <!-- Review 1 -->
+                        <div class="col-md-6 mb-4">
+                          <div class="d-flex align-items-start mb-2">
+                            <div
+                              class="bg-dark text-white rounded-circle d-flex justify-content-center align-items-center mr-3"
+                              style="width:40px; height:40px;">AA</div>
+                            <div>
+                              <h6 class="mb-0 font-weight-bold">Afira A.</h6>
+                              <small class="text-muted">
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                • 3 weeks ago
+                              </small>
+                            </div>
+                          </div>
+                          <p class="mb-2 small">
+                            This is one of the best Python courses I found online. It's more than just lessons about
+                            Python.
+                            It's a full program that trained me to think like a coder.
+                          </p>
+                          <div class="d-flex align-items-center small text-muted">
+                            Helpful?
+                            <i class="fa fa-thumbs-up ml-2 mr-1"></i>
+                            <i class="fa fa-thumbs-down"></i>
+                          </div>
+                        </div>
+
+                        <!-- Review 2 -->
+                        <div class="col-md-6 mb-4">
+                          <div class="d-flex align-items-start mb-2">
+                            <div
+                              class="bg-dark text-white rounded-circle d-flex justify-content-center align-items-center mr-3"
+                              style="width:40px; height:40px;">TR</div>
+                            <div>
+                              <h6 class="mb-0 font-weight-bold">Timoty R.</h6>
+                              <small class="text-muted">
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                • 3 weeks ago
+                              </small>
+                            </div>
+                          </div>
+                          <p class="mb-2 small">
+                            To complete the course it took a while longer than 100 days, but the goal isn't to speed-run
+                            it,
+                            but to complete it and keep consistency. Building a habit of coding every day nurtures
+                            passion.
+                          </p>
+                          <div class="d-flex align-items-center small text-muted">
+                            Helpful?
+                            <i class="fa fa-thumbs-up ml-2 mr-1"></i>
+                            <i class="fa fa-thumbs-down"></i>
+                          </div>
+                        </div>
+
+                        <!-- Review 3 -->
+                        <div class="col-md-6 mb-4">
+                          <div class="d-flex align-items-start mb-2">
+                            <div
+                              class="bg-dark text-white rounded-circle d-flex justify-content-center align-items-center mr-3"
+                              style="width:40px; height:40px;">AM</div>
+                            <div>
+                              <h6 class="mb-0 font-weight-bold">AJMAL P M.</h6>
+                              <small class="text-muted">
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                • 2 months ago
+                              </small>
+                            </div>
+                          </div>
+                          <p class="mb-2 small">
+                            One of the best programming courses I learned. I fully understand and have become a
+                            programmer.
+                            I will recommend this course to others.
+                          </p>
+                          <div class="d-flex align-items-center small text-muted">
+                            Helpful?
+                            <i class="fa fa-thumbs-up ml-2 mr-1"></i>
+                            <i class="fa fa-thumbs-down"></i>
+                          </div>
+                        </div>
+
+                        <!-- Review 4 -->
+                        <div class="col-md-6 mb-4">
+                          <div class="d-flex align-items-start mb-2">
+                            <div
+                              class="bg-dark text-white rounded-circle d-flex justify-content-center align-items-center mr-3"
+                              style="width:40px; height:40px;">CA</div>
+                            <div>
+                              <h6 class="mb-0 font-weight-bold">Clark A.</h6>
+                              <small class="text-muted">
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star-o text-warning"></i>
+                                • 2 months ago
+                              </small>
+                            </div>
+                          </div>
+                          <p class="mb-2 small">
+                            I loved the course, easy to understand and follow. I completed it on my own and felt
+                            confident.
+                            Only thing is I wish there was more advanced material.
+                          </p>
+                          <div class="d-flex align-items-center small text-muted">
+                            Helpful?
+                            <i class="fa fa-thumbs-up ml-2 mr-1"></i>
+                            <i class="fa fa-thumbs-down"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!-- ================= MORE COURSES ================= -->
+                    <div class="container my-5">
+                      <!-- Show all reviews button -->
+                      <div class="mb-4">
+                        <button class="btn secondary-btn">Show all reviews</button>
+                      </div>
+
+                      <!-- Heading -->
+                      <h5 class="font-weight-bold mb-4">
+                        More Courses by
+                        <span class="text-primary">Dr. Angela Yu, Developer and Lead Instructor</span>
+                      </h5>
+
+                      <!-- Courses Row -->
+                      <div class="row">
+                        <!-- Course 1 -->
+                        <div class="col-md-4 mb-2">
+                          <div class="card h-100 border-0">
+                            <img src="assets/img/img1.png" class="card-img-top" alt="Full-Stack Web Dev">
+                            <div class="card-body p-0 mt-2">
+                              <h6 class="font-weight-bold">The Complete Full-Stack Web Development Bootcamp</h6>
+                              <p class="small text-muted mb-1">Dr. Angela Yu, Developer and Lead Instructor</p>
+                              <div class="small mb-1">
+                                <span class="font-weight-bold">4.7</span>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star-half-o text-warning"></i>
+                                (452,301)
+                              </div>
+                              <p class="small text-muted mb-1">
+                                61.5 total hours • 374 lectures • All Levels
+                              </p>
+                              <p class="font-weight-bold mb-0">
+                                $13.99 <small class="text-muted"><s>$64.99</s></small>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Course 2 -->
+                        <div class="col-md-4 mb-2">
+                          <div class="card h-100 border-0">
+                            <img src="assets/img/img2.png" class="card-img-top" alt="iOS & Swift">
+                            <div class="card-body p-0 mt-2">
+                              <h6 class="font-weight-bold">iOS & Swift - The Complete iOS App Development Bootcamp</h6>
+                              <p class="small text-muted mb-1">Dr. Angela Yu, Developer and Lead Instructor</p>
+                              <div class="small mb-1">
+                                <span class="font-weight-bold">4.7</span>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star-half-o text-warning"></i>
+                                (95,328)
+                              </div>
+                              <p class="small text-muted mb-1">
+                                60.5 total hours • 542 lectures • All Levels
+                              </p>
+                              <p class="font-weight-bold mb-0">
+                                $13.99 <small class="text-muted"><s>$64.99</s></small>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Course 3 -->
+                        <div class="col-md-4 mb-2">
+                          <div class="card h-100 border-0">
+                            <img src="assets/img//img3.png" class="card-img-top" alt="Flutter Development">
+                            <div class="card-body p-0 mt-2">
+                              <h6 class="font-weight-bold">The Complete Flutter Development Bootcamp with Dart</h6>
+                              <p class="small text-muted mb-1">Dr. Angela Yu, Developer and Lead Instructor</p>
+                              <div class="small mb-1">
+                                <span class="font-weight-bold">4.6</span>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star-o text-warning"></i>
+                                (57,505)
+                              </div>
+                              <p class="small text-muted mb-1">
+                                29 total hours • 217 lectures • All Levels
+                              </p>
+                              <p class="font-weight-bold mb-0">
+                                $13.99 <small class="text-muted"><s>$64.99</s></small>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Bottom Report abuse -->
+                      <div class="text-center mt-4">
+                        <button class="btn secondary-btn btn-block">Report abuse</button>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <!-- ================= END WHITE SECTION ================= -->
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <!-- Footer Section -->
+  <footer class="site-footer" style="background-color: #2a2b3f;">
+    <div class="footer-top d-inline-flex w-100 justify-content-between">
+      <p class="footer-heading">
+        Top companies choose <span class="highlight">Udemy Business</span> to build in-demand career skills.
+      </p>
+      <div class="footer-logos">
+        <img src="assets/img/eventbrite-light.svg" alt="Nasdaq">
+        <img src="assets/img/nasdaq-light.svg" alt="NetApp">
+        <img src="assets/img/netapp-light.svg" alt="Eventbrite">
+        <img src="assets/img/volkswagen-light.svg" alt="Eventbrite">
+      </div>
+    </div>
+
+    <!-- Footer Grid Links -->
+    <div class="footer-links">
+      <div>
+        <h4>In-demand Careers</h4>
+        <ul>
+          <li>Data Scientist</li>
+          <li>Full Stack Web Developer</li>
+          <li>Cloud Engineer</li>
+          <li>Project Manager</li>
+          <li>Game Developer</li>
+          <li>All Career Accelerators</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Web Development</h4>
+        <ul>
+          <li>Web Development</li>
+          <li>JavaScript</li>
+          <li>React JS</li>
+          <li>Angular</li>
+          <li>Java</li>
+        </ul>
+      </div>
+      <div>
+        <h4>IT Certifications</h4>
+        <ul>
+          <li>Amazon AWS</li>
+          <li>AWS Certified Cloud Practitioner</li>
+          <li>AZ-900: Microsoft Azure Fundamentals</li>
+          <li>AWS Certified Solutions Architect</li>
+          <li>Kubernetes</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Leadership</h4>
+        <ul>
+          <li>Leadership</li>
+          <li>Management Skills</li>
+          <li>Project Management</li>
+          <li>Personal Productivity</li>
+          <li>Emotional Intelligence</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Certifications by Skill</h4>
+        <ul>
+          <li>Cybersecurity Certification</li>
+          <li>Project Management Certification</li>
+          <li>Cloud Certification</li>
+          <li>Data Analytics Certification</li>
+          <li>HR Management Certification</li>
+          <li>See all Certifications</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Data Science</h4>
+        <ul>
+          <li>Data Science</li>
+          <li>Python</li>
+          <li>Machine Learning</li>
+          <li>ChatGPT</li>
+          <li>Deep Learning</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Communication</h4>
+        <ul>
+          <li>Communication Skills</li>
+          <li>Presentation Skills</li>
+          <li>Public Speaking</li>
+          <li>Writing</li>
+          <li>PowerPoint</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Business Analytics & Intelligence</h4>
+        <ul>
+          <li>Microsoft Excel</li>
+          <li>SQL</li>
+          <li>Microsoft Power BI</li>
+          <li>Data Analysis</li>
+          <li>Business Analysis</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom" style="background-color: #1c1d29;">
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li>About us</li>
+          <li>Careers</li>
+          <li>Contact us</li>
+          <li>Blog</li>
+          <li>Investors</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Discover Udemy</h4>
+        <ul>
+          <li>Get the app</li>
+          <li>Teach on Udemy</li>
+          <li>Plans and Pricing</li>
+          <li>Affiliate</li>
+          <li>Help and Support</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Udemy for Business</h4>
+        <ul>
+          <li>Udemy Business</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal & Accessibility</h4>
+        <ul>
+          <li>Accessibility statement</li>
+          <li>Privacy policy</li>
+          <li>Sitemap</li>
+          <li>Terms</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-copy" style="background-color: #1c1d29;">
+      <div class="copy-left">
+        <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="Udemy Logo" height="20">
+        <span>© 2025 Udemy, Inc.</span>
+      </div>
+      <div class="copy-right">
+        <a href="#">Cookie settings</a>
+        <a href="#"><i class="fa-regular fa-globe"></i> English</a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const expandLink = document.getElementById('expandAll');
+    let expanded = false;
+
+    expandLink.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      // Toggle all collapse elements inside #courseAccordion
+      const sections = document.querySelectorAll('#courseAccordion .collapse');
+      sections.forEach(sec => {
+        if (!expanded) {
+          // open all
+          $(sec).collapse('show');
+        } else {
+          // close all
+          $(sec).collapse('hide');
+        }
+      });
+
+      // Toggle link text
+      expanded = !expanded;
+      expandLink.textContent = expanded ? 'Collapse all sections' : 'Expand all sections';
+    });
+  });
+</script>
+
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</html>

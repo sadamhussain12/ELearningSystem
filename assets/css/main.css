@@ -9,7 +9,7 @@
     }
 
     body {
-      font-family: "Poppins", Sans-serif;
+      font-family: auto;
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -17,14 +17,32 @@
 
     .heading-1 {
       color: var(--text-primary-color);
-      font-family: "Poppins", Sans-serif;
+      font-family: auto;
       font-weight: 700;
       font-size: 40px;
     }
 
     .heading-2 {
       color: var(--text-primary-color);
-      font-family: "Poppins", Sans-serif;
+      font-family: auto;
+font-size: 19px;
+    line-height: 24px;
+    font-weight: 600;
+    }
+
+    .heading-6 {
+      color: var(--text-primary-color);
+      font-family: auto;
+font-size: 25px;
+    line-height: 24px;
+    font-weight: 600;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    }
+
+    .heading-3 {
+      color: var(--text-primary-color);
+      font-family: auto;
 font-size: 19px;
     line-height: 24px;
     font-weight: 600;
@@ -242,6 +260,241 @@ font-size: 19px;
 }
 
 
+#closeMenu{
+  border: 1px solid;
+    border-radius: 4px;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: none;
+}
+
+@media (max-width: 1144px) and (min-width: 992px) {
+  .top-header .nav-link,
+  .top-header .btn {
+    font-size: 12px !important;
+  }
+}
+
+.search-form-pc-larg{
+  max-width: 350px;
+}
+
+@media (max-width: 1144px) and (min-width: 992px) {
+  .search-form-pc-larg {
+    max-width: 180px !important;
+    width: 100%;
+  }
+}
+
+
+
+      /* Mobile Search Overlay */
+      .mobile-search-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 10px 15px;
+        display: none;
+        align-items: center;
+        z-index: 1050;
+        border-bottom: 1px solid #ccc;
+      }
+      .mobile-search-overlay.active {
+        display: flex;
+      }
+      .mobile-search-overlay input {
+        flex: 1;
+        border: none;
+        outline: none;
+        padding: 8px 10px;
+        font-size: 16px;
+      }
+      .mobile-search-overlay button {
+        background: none;
+        border: none;
+        font-size: 20px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+
+      /* Offcanvas Sidebar */
+      .offcanvas-menu {
+        position: fixed;
+        top: 0;
+        left: -260px;
+        width: 260px;
+        height: 100%;
+        background: #fff;
+        box-shadow: 2px 0 8px rgba(0,0,0,0.15);
+        transition: left 0.3s ease-in-out;
+        z-index: 2000;
+        padding: 20px;
+      }
+      .offcanvas-menu.active {
+        left: 0;
+      }
+      .offcanvas-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+      }
+      .offcanvas-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .offcanvas-menu ul li {
+        margin: 12px 0;
+      }
+      .offcanvas-menu ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+      }
+      .offcanvas-menu ul li a:hover {
+        color: var(--primary-color);
+      }
+
+
+      .black-bnt{
+        background-color: #1c1d29;
+            font-size: 14px;
+    font-weight: 600;
+    color: var(--background-color);
+      }
+
+       .black-bnt:hover{
+        background-color: transparent;
+            font-size: 14px;
+    font-weight: 600;
+    color: black;
+    border: #1c1d29 solid 1px;
+      }
+
+.spaces-p{
+  color: #6a6f73;
+  font-size: 19px;
+}
+
+  /* Tick list styling */
+    .tick-list {
+      list-style: none;   /* remove default bullets */
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .tick-list li {
+      position: relative;
+      padding-left: 28px; /* space for icon */
+      margin-bottom: 1.6rem;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .tick-list li::before {
+      content: "✔";                /* tick icon */
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #28a745;              /* Bootstrap success green */
+      font-weight: bold;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+
+    /* Responsive font scaling */
+    @media (min-width: 768px) {
+      .tick-list li { font-size: 1.05rem; }
+    }
+    @media (min-width: 992px) {
+      .tick-list li { font-size: 1.1rem; }
+    }
+
+
+    .teach-div-pc{
+      background-image: url(../img/billboard-desktop-2x-v4.webp);
+          height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+        align-items: center;
+    }
+
+     .teach-div-pc-2{
+      background-color: #eeeeee;
+  
+    background-position: center;
+    background-size: cover;
+    display: flex;
+        align-items: center;
+    }
+
+     .teach-div-mobil{
+          width: -webkit-fill-available;
+          display: none;
+    }
+
+  @media screen and (max-width: 700px) {
+  .teach-div-pc-2-2{
+    display: none;
+  }
+
+  .teach-div-mobil {
+    display: block !important;
+  }
+}
+
+.number-div{
+  background-color: var(--background-new-bg-color);
+  height: 180px;
+      align-content: center;
+}
+
+.number-div-2{
+  background-color: var(--background-new-bg-color);
+      align-content: center;
+}
+
+ .stats-number {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      .stats-text {
+        font-size: 1rem;
+        opacity: 0.9;
+      }
+
+      .section-text p {
+    font-size: 21px;
+    line-height: 1.4;
+    color: #2a2b3f;
+}
+
+@media (max-width: 768px) {
+ .number-div {
+    height: auto !important;
+        padding: 20px 0px;
+
+  }
+}
+
+@media (max-width: 768px) {
+ .number-div-2 {
+    height: auto !important;
+        padding: 20px 0px;
+
+  }
+}
 
 /* ////////////////////////// salman css start  */
    .plan-card {
@@ -432,56 +685,23 @@ font-size: 19px;
         opacity: 1;
         display: flex;
         align-items: center;
-        justify-content: center;
-    }
-    .carousel-control-prev {
-        left: -25px;
-    }
-    .carousel-control-next {
-        right: -25px;
-    }
-    .section-heading {
-        font-size: 2rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
-        text-align: center;
-    }
-    .subheading {
-        font-size: 1.1rem;
-        color: #6c757d;
-        margin-bottom: 2rem;
-        text-align: center;
-    }
-    
-        /* testimounal css end  */
-
-        /* FAq css strat  */
-   .faq-btn {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      text-align: left;
-      font-weight: 500;
-    }
-
-    .faq-icon {
-      transition: transform 0.3s ease;
-      width: 16px;
-      height: 16px;
-      fill: #555;
-    }
-
-    .collapsed .faq-icon {
-      transform: rotate(0deg);
-    }
-
-    .faq-btn[aria-expanded="true"] .faq-icon {
-      transform: rotate(180deg);
-    }
-    .card_color{
-      background-color: lightgoldenrodyellow;
-    }
-        /* FAQ css End  */
-/* ////////////////////// salman css End //////////  */
-
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+      }
+      .offcanvas-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .offcanvas-menu ul li {
+        margin: 12px 0;
+      }
+      .offcanvas-menu ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+      }
+      .offcanvas-menu ul li a:hover {
+        color: var(--primary-color);
+      }

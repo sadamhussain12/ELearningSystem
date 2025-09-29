@@ -104,160 +104,187 @@
 
 
 
-
-<div class="container mt-5">
-
-<div class="row">
-  
-<div class="col-md-6">
-  <h1 class="heading-1">Get your demo</h1>
-
-  <p class="spaces-p mt-3">Tell us your needs and we’ll start on a custom plan to drive results.</p>
-
-  <h2 class="heading-2 mt-5">With E-learing as your learning partner, you can:</h2>
-
-<div class="my-4">
-  <ul class="tick-list">
-    <li>Train your entire workforce with over 30,000+ courses in 16 languages</li>
-    <li>Prep employees for over 200 industry-recognized certification exams</li>
-    <li>Develop highly skilled tech teams in risk-free practice environments</li>
-    <li>Identify emerging skills gaps, learning trends, and industry benchmarks</li>
-    <li>Integrate content with your existing learning management system</li>
-  </ul>
-</div>
-
-<h2 class="heading-2 mt-5">Trusted by</h2>
-
-<div class="my-4">
-  <div class="row text-center align-items-center">
-    <div class="col-6 col-md-3 mb-4">
-      <img src="https://business.E-learing.com/wp-content/uploads/2023/11/volkswagen-logo-11-2023.png" alt="Volkswagen logo" class="img-fluid">
-    </div>
-    <div class="col-6 col-md-3 mb-4">
-      <img src="https://business.E-learing.com/wp-content/uploads/2023/11/samsung-logo-11-2023.png" alt="Samsung logo" class="img-fluid">
-    </div>
-    <div class="col-6 col-md-3 mb-4">
-      <img src="https://business.E-learing.com/wp-content/uploads/2023/11/cisco-logo-11-2023.png" alt="Cisco logo" class="img-fluid">
-    </div>
-    <div class="col-6 col-md-3 mb-4">
-      <img src="https://business.E-learing.com/wp-content/uploads/2023/11/att-logo-11-2023.png" alt="AT&T logo" class="img-fluid">
-    </div>
-  </div>
-
-  <div class="row text-center align-items-center">
-    <div class="col-6 col-md-3 mb-4">
-      <img src="https://business.E-learing.com/wp-content/uploads/2023/11/pg-logo-11-2023.png" alt="P&G logo" class="img-fluid">
-    </div>
-    <div class="col-6 col-md-3 mb-4">
-      <img src="https://business.E-learing.com/wp-content/uploads/2025/03/vimeo-logo-dark-gray.svg" alt="Vimeo logo" class="img-fluid">
-    </div>
-    <div class="col-6 col-md-3 mb-4">
-      <img src="https://business.E-learing.com/wp-content/uploads/2023/11/citi-logo-11-2023.png" alt="Citi logo" class="img-fluid">
-    </div>
-    <div class="col-6 col-md-3 mb-4">
-      <img src="https://business.E-learing.com/wp-content/uploads/2023/11/ericsson-logo-11-2023.png" alt="Ericsson logo" class="img-fluid">
-    </div>
-  </div>
-</div>
-
-</div>
-
-
-<div class="col-md-6">
-  <form>
-
-    <!-- HTML aaaa -->
-<div class="form-wrap">
-  <label class="floating">
-    <input id="work-email" type="email" required placeholder=" " />
-    <span class="floating__label">Work Email *</span>
-  </label>
-</div>
-
-<button class="btn black-bnt btn-block pt-3 pb-3 mt-5">Submit</button>
-
-<p id="terms" class="no-underline" style="font-size: 11px; line-height: 1.5; margin-top: 24px; text-align: left; transition: opacity 300ms; visibility: visible; opacity: 1;">
-		By signing up, you agree to our <a target="_blank" rel="noopener" href="#">Terms of Use</a> and <a target="_blank" rel="noopener" href="#">Privacy Policy</a>.	</p>
-
-
-  </form>
-</div>
-</div>
-
-</div>
-
 <style>
-  /* CSS - make the block full width of its parent */
-.form-wrap { width: 100%; }
+    .cart-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 15px;
+    }
+    .cart-title {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .cart-subtitle {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .cart-item {
+      display: flex;
+      align-items: flex-start;
+      padding: 20px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    .cart-item img {
+      width: 180px;
+      border-radius: 3px;
+    }
+    .cart-item-content {
+      flex: 1;
+      margin-left: 20px;
+    }
+    .cart-item-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    .cart-item-title a {
+      color: #1c1d1f;
+      text-decoration: none;
+    }
+    .cart-item-meta {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .badge-success {
+      background: #fad7c4;
+      color: #065f46;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 3px;
+    }
+    .rating {
+      color: #e59819;
+      font-weight: 600;
+    }
+    .cart-item-actions a {
+      font-size: 14px;
+      color: #5624d0;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .cart-item-price {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1c1d1f;
+    }
+    .cart-item-oldprice {
+      text-decoration: line-through;
+      font-size: 14px;
+      color: #6a6f73;
+    }
+    /* Sidebar */
+    .cart-summary {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .cart-summary h5 {
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    .cart-summary .total {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    .cart-summary .old-total {
+      text-decoration: line-through;
+      color: #6a6f73;
+      font-size: 16px;
+    }
+    .cart-summary .discount {
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #1c1d1f;
+    }
 
-/* Floating label container */
-.floating {
-  display: block;
-  position: relative;
-  width: 100%;
-  border: 1px solid #222;        /* border color like your image */
-  border-radius: 8px;
-  padding: 28px 18px 14px;       /* tall padding so label sits inside */
-  box-sizing: border-box;
-  background: #fff;
-  transition: box-shadow .18s ease, border-color .18s ease;
-  cursor: text;
-}
+  </style>
 
-/* Input fills the area and is visually minimal */
-.floating input {
-  width: 100%;
-  border: 0;
-  outline: 0;
-  font-size: 16px;
-  color: #222;
-  background: transparent;
-  line-height: 1.2;
-  padding: 0;                    /* label handles spacing */
-}
 
-/* Invisible placeholder trick: keep a placeholder but empty */
-.floating input::placeholder { color: transparent; }
 
-/* Floating label text positioned inside the input area */
-.floating__label {
-  position: absolute;
-  left: 18px;
-  top: 28px;
-  transform-origin: left top;
-  transition: transform .18s ease, font-size .18s ease, top .18s ease;
-  pointer-events: none;
-  font-weight: 700;
-  color: #222;
-  font-size: 16px;
-}
+  <div class="cart-container">
+    <h1 class="cart-title">Shopping Cart</h1>
+    <p class="cart-subtitle">2 Courses in Cart</p>
+    <div class="row">
+      <!-- Cart Items -->
+      <div class="col-lg-8">
+        <!-- Item 1 -->
+        <!-- Item 1 -->
+<div class="cart-item row no-gutters">
+  <div class="col-12 col-sm-4 col-md-3">
+    <img src="assets/img/5170404_d282_9.webp" alt="Course" class="img-fluid w-100">
+  </div>
+  <div class="col-12 col-sm-8 col-md-6 pl-sm-3 mt-3 mt-sm-0">
+    <div class="cart-item-title">
+      <a href="#">The Complete AI Guide: Learn ChatGPT, Generative AI & More</a>
+    </div>
+    <div class="cart-item-meta">
+      By Julian Melanson and 2 others <br>
+      <span class="badge badge-success">Bestseller</span>
+      <span class="rating">4.5 ★★★★☆</span> (52,820 ratings) <br>
+      39.5 total hours • 519 lectures • All Levels
+    </div>
+    <span class="badge" style="background:#f26e25; color:#fff; font-size:12px; font-weight:600; padding:4px 8px; border-radius:3px;">
+        Premium
+      </span>
+    <div class="cart-item-actions">
+      <a>Remove</a> <a>Save for Later</a>
+    </div>
+  </div>
+  <div class="col-12 col-md-3 text-md-right mt-3 mt-md-0">
+    <div class="cart-item-price">$9.99</div>
+    <div class="cart-item-oldprice">$49.99</div>
+  </div>
+</div>
 
-/* When input is focused OR has value, lift and shrink the label */
-.floating input:focus + .floating__label,
-.floating input:not(:placeholder-shown) + .floating__label {
-  top: 8px;
-  transform: translateY(-2px) scale(.86);
-  font-size: 13px;
-  color: #333;
-}
+        <!-- Item 2 -->
+        <!-- Item 1 -->
+<div class="cart-item row no-gutters">
+  <div class="col-12 col-sm-4 col-md-3">
+    <img src="assets/img/5061666_b32b_6.jpg" alt="Course" class="img-fluid w-100">
+  </div>
+  <div class="col-12 col-sm-8 col-md-6 pl-sm-3 mt-3 mt-sm-0">
+    <div class="cart-item-title">
+      <a href="#">The Complete AI Guide: Learn ChatGPT, Generative AI & More</a>
+    </div>
+    <div class="cart-item-meta">
+      By Julian Melanson and 2 others <br>
+      <span class="badge badge-success">Bestseller</span>
+      <span class="rating">4.5 ★★★★☆</span> (52,820 ratings) <br>
+      39.5 total hours • 519 lectures • All Levels
+    </div>
+    <span class="badge" style="background:#f26e25; color:#fff; font-size:12px; font-weight:600; padding:4px 8px; border-radius:3px;">
+        Premium
+      </span>
+    <div class="cart-item-actions">
+      <a>Remove</a> <a>Save for Later</a>
+    </div>
+  </div>
+  <div class="col-12 col-md-3 text-md-right mt-3 mt-md-0">
+    <div class="cart-item-price">$9.99</div>
+    <div class="cart-item-oldprice">$49.99</div>
+  </div>
+</div>
 
-/* Focus style for the container */
-.floating input:focus ~ .floating__label,
-.floating input:focus + .floating__label {
-  color: #111;
-}
-.floating input:focus {
-  caret-color: #111;
-}
-.floating input:focus ~ /* shadow fallback for older browsers */ .floating__label {}
-.floating:focus-within {
-  box-shadow: 0 0 0 3px rgba(34,34,34,0.04);
-  border-color: #111;
-}
+      </div>
+      <!-- Cart Summary -->
+      <div class="col-lg-4">
+        <div class="cart-summary">
+          <h5>Total:</h5>
+          <div class="total">$19.98</div>
+          <div class="old-total">$99.98</div>
+          <div class="discount">80% off</div>
+          <button class="btn main-btn btn-block mb-2">Proceed to Checkout →</button>
+          <p class="text-muted" style="font-size:14px;">You won't be charged yet</p>
+          <button class="btn secondary-btn btn-block">Apply Coupon</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-/* Optional: increase the rounded corner and spacing to match screenshot exactly */
-
-</style>
 
 
 

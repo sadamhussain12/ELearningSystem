@@ -101,163 +101,135 @@
 
 
 
+    <style>
+      .checkout-title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+ 
+      .order-box {
+        background: #f7f9fa;
+        padding: 20px;
+        border-radius: 6px;
+      }
+      .order-box h5 {
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+      .course-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;
+      }
+      .course-item img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 4px;
+        margin-right: 10px;
+      }
+      .course-item .title {
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .course-item .price {
+        font-weight: 700;
+      }
+      .discount {
+        color: #6a6f73;
+        text-decoration: line-through;
+        font-size: 13px;
+        margin-left: 5px;
+      }
 
+      /* Sticky only on large screens */
+@media (min-width: 992px) {
+  .sticky-lg {
+    position: sticky;
+    top: 20px;  /* adjust spacing from top */
+  }
+}
 
+    </style>
 
-
-<div class="container mt-5">
-
-<div class="row">
-  
-<div class="col-md-6">
-  <h1 class="heading-1">Get your demo</h1>
-
-  <p class="spaces-p mt-3">Tell us your needs and we’ll start on a custom plan to drive results.</p>
-
-  <h2 class="heading-2 mt-5">With E-learing as your learning partner, you can:</h2>
-
-<div class="my-4">
-  <ul class="tick-list">
-    <li>Train your entire workforce with over 30,000+ courses in 16 languages</li>
-    <li>Prep employees for over 200 industry-recognized certification exams</li>
-    <li>Develop highly skilled tech teams in risk-free practice environments</li>
-    <li>Identify emerging skills gaps, learning trends, and industry benchmarks</li>
-    <li>Integrate content with your existing learning management system</li>
-  </ul>
+    
+    <div class="container py-5 px-5">
+      <div class="row">
+        <!-- Left Side -->
+        <div class="col-lg-7">
+          <h2 class="checkout-title">Checkout</h2>
+          <hr>
+          <h5>1. Log in or create an account</h5>
+          <p>
+            A E-learing account is required to access your purchased courses.
+            Please verify that your email address is correct, as we’ll use it to send your order confirmation.
+            By signing up, you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+          </p>
+        <div class="d-lg-flex" style="gap: 20px;">
+  <input type="email" class="form-control mb-3" placeholder="Email" style="    height: 40px;">
+  <div class="d-flex align-items-center mb-2" style="gap: 10px;">
+    <span class="mr-2">or</span>
+    <a href="#" class="secondary-btn p-2 rounded">
+      <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" width="24">
+    </a>
+    <a href="#" class="secondary-btn p-2 rounded">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" width="24">
+    </a>
+    <a href="#" class="secondary-btn p-2 rounded">
+      <img src="https://cdn-icons-png.flaticon.com/512/731/731985.png" width="24">
+    </a>
+  </div>
 </div>
 
-<h2 class="heading-2 mt-5">Trusted by</h2>
+          <small class="text-muted d-block mb-2">No password required</small>
+          <button class="btn main-btn btn-block mb-4">Continue</button>
+          <hr>
+          <h5>2. Billing address & Payment method</h5>
+          <p class="text-muted"><i class="fa fa-lock"></i> Secure checkout</p>
 
-<div class="my-4">
-  <div class="row text-center align-items-center">
-    <div class="col-6 col-md-3 mb-4">
-      <img src="https://business.E-learing.com/wp-content/uploads/2023/11/volkswagen-logo-11-2023.png" alt="Volkswagen logo" class="img-fluid">
+          <h5 class="mt-4">Order details (2 courses)</h5>
+          <div class="course-item">
+            <img src="assets/img/5170404_d282_9.webp">
+            <div>
+              <div class="title">The Complete AI Guide: Learn ChatGPT, Generative AI & More</div>
+              <div class="price">$9.99 <span class="discount">$49.99</span></div>
+            </div>
+          </div>
+          <div class="course-item">
+            <img src="assets/img/5061666_b32b_6.jpg">
+            <div>
+              <div class="title">ChatGPT: Complete ChatGPT Course For Work 2025</div>
+              <div class="price">$9.99 <span class="discount">$49.99</span></div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Right Side -->
+<div class="col-lg-5">
+  <div class="order-box sticky-lg">
+    <h5>Order summary</h5>
+    <div class="d-flex justify-content-between">
+      <span>Original Price:</span>
+      <span>$99.98</span>
     </div>
-    <div class="col-6 col-md-3 mb-4">
-      <img src="https://business.E-learing.com/wp-content/uploads/2023/11/samsung-logo-11-2023.png" alt="Samsung logo" class="img-fluid">
+    <div class="d-flex justify-content-between">
+      <span>Discounts (80% Off):</span>
+      <span>- $80.00</span>
     </div>
-    <div class="col-6 col-md-3 mb-4">
-      <img src="https://business.E-learing.com/wp-content/uploads/2023/11/cisco-logo-11-2023.png" alt="Cisco logo" class="img-fluid">
-    </div>
-    <div class="col-6 col-md-3 mb-4">
-      <img src="https://business.E-learing.com/wp-content/uploads/2023/11/att-logo-11-2023.png" alt="AT&T logo" class="img-fluid">
+    <hr>
+    <div class="d-flex justify-content-between font-weight-bold">
+      <span>Total (2 courses):</span>
+      <span>$19.98</span>
     </div>
   </div>
+</div>
 
-  <div class="row text-center align-items-center">
-    <div class="col-6 col-md-3 mb-4">
-      <img src="https://business.E-learing.com/wp-content/uploads/2023/11/pg-logo-11-2023.png" alt="P&G logo" class="img-fluid">
+      </div>
     </div>
-    <div class="col-6 col-md-3 mb-4">
-      <img src="https://business.E-learing.com/wp-content/uploads/2025/03/vimeo-logo-dark-gray.svg" alt="Vimeo logo" class="img-fluid">
-    </div>
-    <div class="col-6 col-md-3 mb-4">
-      <img src="https://business.E-learing.com/wp-content/uploads/2023/11/citi-logo-11-2023.png" alt="Citi logo" class="img-fluid">
-    </div>
-    <div class="col-6 col-md-3 mb-4">
-      <img src="https://business.E-learing.com/wp-content/uploads/2023/11/ericsson-logo-11-2023.png" alt="Ericsson logo" class="img-fluid">
-    </div>
-  </div>
-</div>
-
-</div>
 
 
-<div class="col-md-6">
-  <form>
 
-    <!-- HTML aaaa -->
-<div class="form-wrap">
-  <label class="floating">
-    <input id="work-email" type="email" required placeholder=" " />
-    <span class="floating__label">Work Email *</span>
-  </label>
-</div>
-
-<button class="btn black-bnt btn-block pt-3 pb-3 mt-5">Submit</button>
-
-<p id="terms" class="no-underline" style="font-size: 11px; line-height: 1.5; margin-top: 24px; text-align: left; transition: opacity 300ms; visibility: visible; opacity: 1;">
-		By signing up, you agree to our <a target="_blank" rel="noopener" href="#">Terms of Use</a> and <a target="_blank" rel="noopener" href="#">Privacy Policy</a>.	</p>
-
-
-  </form>
-</div>
-</div>
-
-</div>
-
-<style>
-  /* CSS - make the block full width of its parent */
-.form-wrap { width: 100%; }
-
-/* Floating label container */
-.floating {
-  display: block;
-  position: relative;
-  width: 100%;
-  border: 1px solid #222;        /* border color like your image */
-  border-radius: 8px;
-  padding: 28px 18px 14px;       /* tall padding so label sits inside */
-  box-sizing: border-box;
-  background: #fff;
-  transition: box-shadow .18s ease, border-color .18s ease;
-  cursor: text;
-}
-
-/* Input fills the area and is visually minimal */
-.floating input {
-  width: 100%;
-  border: 0;
-  outline: 0;
-  font-size: 16px;
-  color: #222;
-  background: transparent;
-  line-height: 1.2;
-  padding: 0;                    /* label handles spacing */
-}
-
-/* Invisible placeholder trick: keep a placeholder but empty */
-.floating input::placeholder { color: transparent; }
-
-/* Floating label text positioned inside the input area */
-.floating__label {
-  position: absolute;
-  left: 18px;
-  top: 28px;
-  transform-origin: left top;
-  transition: transform .18s ease, font-size .18s ease, top .18s ease;
-  pointer-events: none;
-  font-weight: 700;
-  color: #222;
-  font-size: 16px;
-}
-
-/* When input is focused OR has value, lift and shrink the label */
-.floating input:focus + .floating__label,
-.floating input:not(:placeholder-shown) + .floating__label {
-  top: 8px;
-  transform: translateY(-2px) scale(.86);
-  font-size: 13px;
-  color: #333;
-}
-
-/* Focus style for the container */
-.floating input:focus ~ .floating__label,
-.floating input:focus + .floating__label {
-  color: #111;
-}
-.floating input:focus {
-  caret-color: #111;
-}
-.floating input:focus ~ /* shadow fallback for older browsers */ .floating__label {}
-.floating:focus-within {
-  box-shadow: 0 0 0 3px rgba(34,34,34,0.04);
-  border-color: #111;
-}
-
-/* Optional: increase the rounded corner and spacing to match screenshot exactly */
-
-</style>
 
 
 

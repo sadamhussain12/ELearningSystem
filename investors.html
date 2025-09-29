@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <a class="navbar-brand font-weight-bold" href="#">
+    <h6>E-learing</h6>
+  </a>
+
+
+
+    <!-- Left a menu (Explore + other links) visible on large -->
+  <ul class="navbar-nav ml-3 d-none d-lg-flex top-header">
+    <li class="nav-item"><a class="nav-link" href="#">Explore</a></li>
+  </ul>
+
+  <!-- Desktop Search -->
+  <form class="mx-3 flex-grow-1 d-none d-lg-block search-form-pc-larg">
+    <div class="search-box">
+      <input class="form-control" type="text" placeholder="Search for anything">
+    </div>
+  </form>
+
+    <!-- Left menu (Explore + other links) visible on large -->
+  <ul class="navbar-nav ml-3 d-none d-lg-flex top-header for-respon">
+    <li class="nav-item"><a class="nav-link" href="#">Plans & Pricing</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">E-learing Business</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Teach on E-learing</a></li>
+  </ul>
+
+  <!-- Right side -->
+  <ul class="navbar-nav ml-auto align-items-center top-header" style="    display: ruby;">
+    <!-- Mobile search icon -->
+    <li class="nav-item d-lg-none mx-2">
+      <a href="#" id="mobileSearchBtn"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </li>
+
+    <!-- Cart -->
+    <li class="nav-item mx-2 pt-2 pb-2">
+      <a class="nav-link" href="#"><i class="fa-regular fa-cart-shopping"></i></a>
+    </li>
+
+    <!-- Auth & language (only on large) -->
+    <li class="nav-item d-none d-lg-block mx-1">
+      <button class="btn secondary-btn">Log in</button>
+    </li>
+    <li class="nav-item d-none d-lg-block mx-1">
+      <button class="btn main-btn">Sign up</button>
+    </li>
+    <li class="nav-item d-none d-lg-block mx-1">
+      <button class="btn secondary-btn"><i class="fa-solid fa-globe"></i></button>
+    </li>
+
+    <!-- Mobile toggle -->
+    <li class="nav-item d-lg-none">
+      <button class="navbar-toggler" type="button" id="menuToggleBtn">
+        <span><i class="fa-solid fa-bars"></i></span>
+      </button>
+    </li>
+  </ul>
+</nav>
+
+<!-- Mobile Search Overlay -->
+<div class="mobile-search-overlay" id="mobileSearchOverlay">
+  <input type="text" placeholder="Search for anything">
+  <button id="closeSearch"><i class="fa-solid fa-times"></i></button>
+</div>
+
+<!-- Offcanvas Sidebar -->
+<div class="offcanvas-menu" id="offcanvasMenu">
+  <div class="offcanvas-header">
+    <h5>Menu</h5>
+    <button id="closeMenu"><i class="fa-solid fa-times"></i></button>
+  </div>
+  <ul class="top-header">
+    <li><a href="#">Explore</a></li>
+    <li><a href="#">Plans & Pricing</a></li>
+    <li><a href="#">E-learing Business</a></li>
+    <li><a href="#">Teach on E-learing</a></li>
+   <li class="nav-item ">
+      <button class="btn secondary-btn">Log in</button>
+    </li>
+    <li class="nav-item ">
+      <button class="btn main-btn">Sign up</button>
+    </li>
+    <li class="nav-item">
+      <button class="btn secondary-btn"><i class="fa-solid fa-globe"></i> English</button>
+    </li>
+  </ul>
+</div>
+
+
+
+
+
+
+ <style>
+    .hero {
+      display: flex;
+      align-items: center;
+      padding: 60px 0;
+    }
+    .hero-text h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    .hero img {
+      max-width: 250px;
+      border-radius: 8px;
+    }
+    .our-origins {
+      padding: 60px 0;
+      text-align: center;
+    }
+    .our-origins h2 {
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .contact {
+      padding: 60px 0;
+      background: #f8f9fa;
+    }
+    .contact h2 {
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+    .contact .col-md-4 {
+      margin-bottom: 25px;
+    }
+    .our-offices {
+      padding: 60px 0;
+    }
+    .our-offices h2 {
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+    .office-card {
+      margin-bottom: 30px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      font-size: 14px;
+      color: #555;
+    }
+    footer a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+  
+
+<div class="container-fluid teach-div-pc-2" style="background-color: #5523d0;">
+
+  <div class="container">
+
+  <div class="row" style="align-items: center;">
+    <div class="col-lg-6 teach-div-pc-2-2">
+        <h1 class="heading-1" style="font-weight: 800;
+    font-size: 57px; color: white;">Welcome to where<br> possibilities begin</h1>
+    </div>
+
+    <div class="col-lg-6">
+      <img class="img-fluid" src="assets/img/banner-IR home.jpg" alt="">
+    </div>
+  </div>
+
+  </div>
+
+
+</div>
+
+
+<div class="container-fluid teach-div-mobil p-0">
+
+
+  <div class="container-fluid mt-3 mb-5">
+
+    <h1 class="heading-1" style="    font-weight: 800;
+    font-size: 47px;">Welcome to where possibilities begin</h1>
+
+  </div>
+  
+
+
+</div>
+
+<!-- Our Origins -->
+<section class="our-origins container">
+
+ <center>
+   <div class="newtextdis">
+    <p>E-learing is an AI-powered skills acceleration platform transforming how companies and individuals across the world build the capabilities needed to thrive in a rapidly evolving workplace. By combining on-demand, multi-language content with real-time innovation, E-learing delivers personalized experiences that empower organizations to scale workforce development and help individuals build the technical, business, and soft skills most relevant to their careers. Thousands of companies, including Ericsson, Samsung SDS America, On24, Tata Consultancy Services, The World Bank, and Volkswagen, rely on E-learing Business for its enterprise solutions to build agile, future-ready teams.</p>
+  </div>
+ </center>
+</section>
+
+
+
+
+<div class="container-fluid number-div-2 text-center pt-5 pb-5">
+
+  <h1 class="heading-1 text-center">Creating impact around the world
+</h1>
+
+<p>With our global catalog spanning the latest skills and topics, people and organizations<br> everywhere are able to adapt to change and thrive.</p>
+
+<div class="row text-center">
+
+  
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <div class="stats-number">$787M</div>
+            <div class="stats-text">2024 Revenue</div>
+          </div>
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <div class="stats-number">$520M </div>
+            <div class="stats-text">E-learing Business ARR1</div>
+          </div>
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <div class="stats-number">17.1k</div>
+            <div class="stats-text">E-learing Business Customers</div>
+          </div>
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <div class="stats-number">99%</div>
+            <div class="stats-text">Large Customer Net Dollar Retention Rate</div>
+          </div>
+          
+        </div>
+
+
+
+        <div class="row text-center mt-4">
+
+  
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <div class="stats-number">200k+</div>
+            <div class="stats-text">Consumer Subscribers</div>
+          </div>
+          <div class="col-6 col-md-2 mb-4 mb-md-0">
+            <div class="stats-number">85K</div>
+            <div class="stats-text">Instructors</div>
+          </div>
+          <div class="col-6 col-md-2 mb-4 mb-md-0">
+            <div class="stats-number">81M</div>
+            <div class="stats-text">Learners</div>
+          </div>
+          <div class="col-6 col-md-2 mb-4 mb-md-0">
+            <div class="stats-number">250k</div>
+            <div class="stats-text">Courses</div>
+          </div>
+          <div class="col-12 col-md-3 mb-4 mb-md-0">
+            <div class="stats-number">75</div>
+            <div class="stats-text">Languages</div>
+          </div>
+        
+        </div>
+
+
+</div>
+
+
+
+<!-- How We Started -->
+<section class="how-we-started py-5 container-fluid">
+  <div class="row w-100">
+    <div class="col-md-6 text-center">
+<!-- Video Thumbnail -->
+      <div class="video-thumbnail position-relative d-inline-block">
+        <img class="img-fluid" src="assets/img/video-still-img-1.jpg" alt="founder">
+
+        <!-- Play Button -->
+        <div class="play-button">
+          <span>&#9658;</span>
+        </div>
+      </div>
+    
+    <!-- Bootstrap Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content bg-dark">
+      <div class="modal-body p-0">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe id="videoFrame" class="embed-responsive-item" src="https://www.youtube.com/embed/qRrzBhIHgFQ?si=55IZeTkh8kufPjrQ" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></div>
+    <div class="col-md-6 d-flex align-items-center">
+      <div>
+<h4 class="heading-1">Transforming Lives
+</h4>        <p>
+  
+						Talented people are everywhere, but opportunities can be harder to find. With E-learing, Mohammed — a Syrian refugee — was able to start a new career and a new life in Germany.
+					
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+  <style>
+      .case-section {
+        padding: 60px 20px;
+      }
+      .case-box {
+        margin-bottom: 40px;
+        position: relative;
+      }
+      .case-box p {
+        font-size: 22px;
+        line-height: 1.5;
+        font-weight: 400;
+        margin-bottom: 30px;
+        position: relative;
+      }
+      .case-author {
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+      .case-role {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 10px;
+      }
+      .case-link a {
+        color: #f26e25;
+        font-weight: bold;
+        font-size: 15px;
+        text-decoration: none;
+      }
+      .case-link a:hover {
+        text-decoration: underline;
+      }
+      /* Align quotes nicely */
+  
+      @media (max-width: 991.98px) {
+        .case-box p {
+          font-size: 18px;
+        }
+      }
+    </style>
+    
+    <section class="case-section container">
+      <h1 class="heading-1 text-center mb-5">So many reasons to start</h1>
+      <div class="row">
+        <!-- 1st Column -->
+        <div class="col-lg-4 col-md-6">
+          <div class="case-box text-center">
+            
+            <p>
+              AI Meets EQ: New E-learing Research Shows Enterprises Balancing Tech Mastery with Human Skills
+            </p>
+            <div class="case-author">September 18, 2025</div>
+          
+          </div>
+        </div>
+
+        <!-- 2nd Column -->
+         <div class="col-lg-4 col-md-6">
+          <div class="case-box text-center">
+            
+            <p>
+              AI Meets EQ: New E-learing Research Shows Enterprises Balancing Tech Mastery with Human Skills
+            </p>
+            <div class="case-author">September 18, 2025</div>
+          
+          </div>
+        </div>
+
+        <!-- 3rd Column -->
+        <div class="col-lg-4 col-md-6">
+          <div class="case-box text-center">
+            
+            <p>
+              AI Meets EQ: New E-learing Research Shows Enterprises Balancing Tech Mastery with Human Skills
+            </p>
+            <div class="case-author">September 18, 2025</div>
+          
+          </div>
+        </div>
+      </div>
+
+      <center><button class="btn main-btn" aria-label="Get started" style="    width: 300px;
+    height: 40px;">Get started</button></center>
+    </section>
+
+
+     <style>
+      .logo-section {
+        background: #f7f8f9;
+        padding: 50px 20px;
+        text-align: center;
+      }
+      .logo-section img {
+           max-height: 50px;
+        margin: 20px 40px;
+        opacity: 0.6;
+        transition: opacity 0.3s ease;
+      }
+      .logo-section img:hover {
+        opacity: 1;
+      }
+    </style>
+
+
+
+
+
+<section class="how-we-started container-fluid pt-5 pb-5">
+  
+  <div class="container">
+
+     <h1 class="heading-1 text-center mb-5">Events</h1>
+      <div class="row">
+        <!-- 1st Column -->
+        <div class="col-lg-4 col-md-6">
+          <div class="case-box text-center">
+            
+            <p>
+Canaccord Genuity 45th Annual Growth Conference            </p>
+            <div class="case-author">September 18, 2025</div>
+          
+          </div>
+        </div>
+
+        <!-- 2nd Column -->
+         <div class="col-lg-4 col-md-6">
+          <div class="case-box text-center">
+            
+            <p>
+E-learing Second Quarter 2025 Earnings Call            </p>
+            <div class="case-author">September 18, 2025</div>
+          
+          </div>
+        </div>
+
+        <!-- 3rd Column -->
+        <div class="col-lg-4 col-md-6">
+          <div class="case-box text-center">
+            
+            <p>
+53rd Annual J.P. Morgan Global Technology, Media, and Communications Conference            </p>
+            <div class="case-author">September 18, 2025</div>
+          
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+
+    </section>
+
+
+
+
+
+
+    <section class="case-section container">
+      <h1 class="heading-1 text-center mb-5">Email Alerts</h1>
+    
+      
+
+     
+       <style>
+    .form-section {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .form-left {
+      flex: 1;
+      min-width: 250px;
+    }
+    .form-right {
+      flex: 1;
+      min-width: 300px;
+      display: flex;
+      align-items: flex-end;
+      gap: 10px;
+    }
+    label {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    .form-check {
+      display: inline-block;
+      margin-right: 15px;
+      padding: 0px;
+    }
+    .required {
+      color: red;
+    }
+    .btn-submit {
+      padding: 8px 20px;
+    }
+    /* Fix input height to match button */
+    .form-control {
+      height: calc(2.5rem + 2px);
+    }
+  </style>
+
+  <p>Required fields denoted by an asterisk <span class="required">( * )</span>.</p>
+
+  <form>
+    <div class="form-section">
+      <!-- Left Section -->
+      <div class="form-left">
+        <label>Alert type <span class="required">*</span></label><br>
+        <div class="form-check">
+          <input type="checkbox" id="quote">
+          <label for="quote">Quote</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="sec">
+          <label for="sec">SEC Filing</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="event">
+          <label for="event">Event</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="news">
+          <label for="news">News</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="blog">
+          <label for="blog">IR Blog</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="weekly">
+          <label for="weekly">Weekly Summary</label>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="form-right">
+        <div class="flex-grow-1">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <button type="submit" class="btn main-btn btn-submit">Submit</button>
+      </div>
+    </div>
+  </form>
+
+
+      
+    </section>
+
+
+
+
+
+
+
+<script>
+  // Open video in modal
+  document.querySelector('.video-thumbnail').addEventListener('click', function() {
+    var videoSrc = "https://www.youtube.com/embed/qRrzBhIHgFQ?si=55IZeTkh8kufPjrQ"; // Replace with your video link
+    document.getElementById('videoFrame').src = videoSrc;
+    $('#videoModal').modal('show');
+  });
+
+  // Stop video on modal close
+  $('#videoModal').on('hidden.bs.modal', function () {
+    document.getElementById('videoFrame').src = "";
+  });
+</script>
+
+
+
+<!-- Footer Section -->
+<footer class="site-footer" style="background-color: #2a2b3f;">
+  <div class="footer-top d-inline-flex w-100 justify-content-between">
+    <p class="footer-heading">
+      Top companies choose <span class="highlight">E-learing Business</span> to build in-demand career skills.
+    </p>
+    <div class="footer-logos">
+      <img src="assets/img/eventbrite-light.svg" alt="Nasdaq">
+      <img src="assets/img/nasdaq-light.svg" alt="NetApp">
+      <img src="assets/img/netapp-light.svg" alt="Eventbrite">
+      <img src="assets/img/volkswagen-light.svg" alt="Eventbrite">
+    </div>
+  </div>
+
+  <!-- Footer Grid Links -->
+  <div class="footer-links">
+    <div>
+      <h4>In-demand Careers</h4>
+      <ul>
+        <li>Data Scientist</li>
+        <li>Full Stack Web Developer</li>
+        <li>Cloud Engineer</li>
+        <li>Project Manager</li>
+        <li>Game Developer</li>
+        <li>All Career Accelerators</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Web Development</h4>
+      <ul>
+        <li>Web Development</li>
+        <li>JavaScript</li>
+        <li>React JS</li>
+        <li>Angular</li>
+        <li>Java</li>
+      </ul>
+    </div>
+    <div>
+      <h4>IT Certifications</h4>
+      <ul>
+        <li>Amazon AWS</li>
+        <li>AWS Certified Cloud Practitioner</li>
+        <li>AZ-900: Microsoft Azure Fundamentals</li>
+        <li>AWS Certified Solutions Architect</li>
+        <li>Kubernetes</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Leadership</h4>
+      <ul>
+        <li>Leadership</li>
+        <li>Management Skills</li>
+        <li>Project Management</li>
+        <li>Personal Productivity</li>
+        <li>Emotional Intelligence</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Certifications by Skill</h4>
+      <ul>
+        <li>Cybersecurity Certification</li>
+        <li>Project Management Certification</li>
+        <li>Cloud Certification</li>
+        <li>Data Analytics Certification</li>
+        <li>HR Management Certification</li>
+        <li>See all Certifications</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Data Science</h4>
+      <ul>
+        <li>Data Science</li>
+        <li>Python</li>
+        <li>Machine Learning</li>
+        <li>ChatGPT</li>
+        <li>Deep Learning</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Communication</h4>
+      <ul>
+        <li>Communication Skills</li>
+        <li>Presentation Skills</li>
+        <li>Public Speaking</li>
+        <li>Writing</li>
+        <li>PowerPoint</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Business Analytics & Intelligence</h4>
+      <ul>
+        <li>Microsoft Excel</li>
+        <li>SQL</li>
+        <li>Microsoft Power BI</li>
+        <li>Data Analysis</li>
+        <li>Business Analysis</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Footer -->
+  <div class="footer-bottom" style="background-color: #1c1d29;">
+    <div class="footer-col">
+      <h4>About</h4>
+      <ul>
+        <li>About us</li>
+        <li>Careers</li>
+        <li>Contact us</li>
+        <li>Blog</li>
+        <li>Investors</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Discover E-learing</h4>
+      <ul>
+        <li>Get the app</li>
+        <li>Teach on E-learing</li>
+        <li>Plans and Pricing</li>
+        <li>Affiliate</li>
+        <li>Help and Support</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>E-learing for Business</h4>
+      <ul>
+        <li>E-learing Business</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal & Accessibility</h4>
+      <ul>
+        <li>Accessibility statement</li>
+        <li>Privacy policy</li>
+        <li>Sitemap</li>
+        <li>Terms</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-copy" style="background-color: #1c1d29;">
+    <div class="copy-left">
+      <img src="https://www.E-learing.com/staticx/E-learing/images/v7/logo-E-learing-inverted.svg" alt="E-learing Logo" height="20">
+      <span>© 2025 E-learing, Inc.</span>
+    </div>
+    <div class="copy-right">
+      <a href="#">Cookie settings</a>
+      <a href="#"><i class="fa-regular fa-globe"></i> English</a>
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+  <!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</html>
